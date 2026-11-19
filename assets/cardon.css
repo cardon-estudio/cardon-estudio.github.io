@@ -193,6 +193,14 @@ p { margin: 0; }
 .revelar { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .revelar.visible { opacity: 1; transform: none; }
 
+/* Páginas legales */
+.legal .contenedor { max-width: 780px; }
+.legal h1 { margin-bottom: 18px; }
+.legal h2 { font-family: var(--sans); font-size: 21px; margin: 36px 0 10px; }
+.legal p, .legal li { color: var(--texto-2); }
+.legal ul { padding-left: 22px; display: grid; gap: 6px; }
+.nota-legal { background: var(--jable); padding: 14px 18px; border-radius: 14px; font-size: 15px; }
+
 /* Responsive */
 @media (max-width: 1020px) {
   .rejilla-4, .pasos { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cardon-estudio.github.io/sitemap.xml
