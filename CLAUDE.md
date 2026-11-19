@@ -23,7 +23,7 @@ Web de la agencia Cardón Estudio (diseño web para negocios locales de Canarias
 ## Pendiente
 - Páginas de Aviso legal y Privacidad (obligatorias en España).
 - Pasar las plantillas al mismo sistema de CSS por archivos.
-- Precios (19/11/2026, decididos por el dueño): Web Raíz 99 €, Web Cardón 179 €, tienda desde 299 €, mantenimiento 9 €/mes. Oferta: Web Raíz a 50 € para los 5 primeros negocios (a cambio de reseña y permiso para enseñarla). Sin IGIC; dominio aparte (~12 €/año). Pago 50 % al empezar y 50 % al publicar. Plazos: Web Raíz 24-48 h, Web Cardón 2-3 días (desde que el cliente pasa textos y fotos).
+- Precios (19/11/2026, decididos por el dueño): Web Raíz 50 €, Web Cardón 90 €, tienda desde 299 €, mantenimiento 10 €/mes. Sin IGIC; dominio aparte (~12 €/año). Pago 50 % al empezar y 50 % al publicar. Plazos: Web Raíz 24-48 h, Web Cardón 2-3 días (desde que el cliente pasa textos y fotos).
 - Contacto: solo Instagram @cardon.estudio. El dueño NO quiere su número de WhatsApp en la web.
 - Sustituir las ilustraciones por fotos reales cuando un cliente las aporte.
 - Elegir hosting y dominio (cardonestudio.com aparecía libre el 18/11/2026; comprobarlo antes de comprar).
