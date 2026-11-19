@@ -3,7 +3,7 @@
 Web de la agencia Cardón Estudio (diseño web para negocios locales de Canarias) y 6 modelos de ejemplo por sector para el portfolio.
 
 ## Estructura
-- `index.html` + `assets/cardon.css` — web de Cardón Estudio (menú móvil, WhatsApp flotante, preguntas frecuentes, animaciones al hacer scroll que respetan "reducir movimiento"). La sección "Modelos" enlaza a las plantillas.
+- `index.html` + `assets/cardon.css` — web de Cardón Estudio (menú móvil, preguntas frecuentes, animaciones al hacer scroll que respetan "reducir movimiento"). La sección "Modelos" enlaza a las plantillas.
 - `assets/favicon.svg` — icono de la pestaña.
 - `plantillas/` — barberia, cafeteria, estetica, taller, fisio y tienda-cintas (tienda online con carrito de ejemplo).
 - HTML estático, sin dependencias ni build. Fuentes de Google Fonts. Las plantillas llevan estilos en línea y un poco de JavaScript al final (scroll suave y, en la tienda, el carrito). La web principal usa el CSS de `assets/` con variables de marca: mantenlo así.
@@ -21,10 +21,9 @@ Web de la agencia Cardón Estudio (diseño web para negocios locales de Canarias
 - No publicar, subir ni enviar nada a clientes sin la aprobación del dueño.
 
 ## Pendiente
-- Sustituir los `[NÚMERO]`, `[USUARIO]` y `[EMAIL]` de los enlaces de WhatsApp, Instagram y correo.
 - Páginas de Aviso legal y Privacidad (obligatorias en España).
 - Pasar las plantillas al mismo sistema de CSS por archivos.
-- Precios de lanzamiento (19/11/2026): Web Raíz 249 €, Web Cardón 449 €, tienda desde 690 €, mantenimiento 19 €/mes (incluye alojamiento). Sin IGIC; dominio aparte (~12 €/año). Pago 50 % al empezar y 50 % al publicar.
-- Rellenar teléfono, Instagram y email en index.html.
+- Precios (19/11/2026, decididos por el dueño): Web Raíz 99 €, Web Cardón 179 €, tienda desde 299 €, mantenimiento 9 €/mes. Oferta: Web Raíz a 50 € para los 5 primeros negocios (a cambio de reseña y permiso para enseñarla). Sin IGIC; dominio aparte (~12 €/año). Pago 50 % al empezar y 50 % al publicar.
+- Contacto: solo Instagram @cardon.estudio. El dueño NO quiere su número de WhatsApp en la web.
 - Sustituir las ilustraciones por fotos reales cuando un cliente las aporte.
 - Elegir hosting y dominio (cardonestudio.com aparecía libre el 18/11/2026; comprobarlo antes de comprar).

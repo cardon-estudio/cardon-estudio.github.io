@@ -64,6 +64,8 @@ p { margin: 0; }
 .portada { padding: 72px 0 104px; }
 .portada .contenedor { display: grid; grid-template-columns: 1.15fr 1fr; gap: 64px; align-items: center; }
 .sello { display: inline-flex; align-items: center; gap: 10px; background: var(--jable); padding: 7px 16px; border-radius: 999px; font-size: 14px; font-weight: 500; margin-bottom: 22px; }
+.sello { color: var(--lava); text-decoration: none; }
+.sello:hover { color: var(--almagre); }
 .sello i { width: 8px; height: 8px; border-radius: 50%; background: var(--cardon); }
 .portada h1 { font-family: var(--serif); font-weight: 700; font-size: clamp(48px, 7vw, 92px); line-height: .98; letter-spacing: -.03em; }
 .portada h1 em { font-style: italic; font-weight: 500; color: var(--almagre); }
@@ -146,6 +148,14 @@ p { margin: 0; }
 
 .nota-precios { margin-top: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; padding: 22px 28px; border-radius: var(--radio); background: var(--jable); font-size: 16px; color: var(--texto-2); }
 .nota-precios strong { color: var(--lava); }
+
+.oferta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px; background: var(--almagre); color: var(--blanco); border-radius: var(--radio); padding: 36px 40px; margin-bottom: 28px; }
+.oferta > div { flex: 1 1 420px; min-width: 0; }
+.oferta-etiqueta { display: inline-block; background: rgba(255,255,255,.18); padding: 5px 14px; border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 12px; }
+.oferta-titulo { font-family: var(--serif); font-size: clamp(34px, 4.5vw, 52px); line-height: 1.05; margin-bottom: 10px; }
+.oferta-titulo strong { font-weight: 700; }
+.oferta p { color: #FBE9E1; }
+.oferta .oferta-titulo { color: var(--blanco); }
 
 /* Preguntas */
 .preguntas { max-width: 820px; }
