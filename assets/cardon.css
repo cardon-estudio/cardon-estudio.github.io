@@ -140,6 +140,8 @@ p { margin: 0; }
 .plan h3 { font-family: var(--sans); font-size: 22px; }
 .plan .para { color: var(--texto-3); font-size: 16px; margin: 6px 0 22px; }
 .plan .precio { font-family: var(--serif); font-size: 40px; line-height: 1; margin-bottom: 24px; }
+.plan .plazo { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; margin: -8px 0 24px; padding: 5px 12px; border-radius: 999px; background: #E6EEE5; color: var(--cardon-osc); font-size: 14px; font-weight: 700; }
+.plan .plazo::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--cardon); }
 .plan .precio small { font-family: var(--sans); font-size: 16px; color: var(--texto-3); }
 .plan ul { list-style: none; padding: 0; margin: 0 0 30px; display: grid; gap: 12px; flex: 1; align-content: start; }
 .plan li { display: flex; gap: 10px; font-size: 16px; color: var(--texto-2); }
