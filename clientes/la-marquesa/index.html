@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>La Duquesa · Peluquería en [MUNICIPIO] · Pide cita</title>
-<meta name="description" content="Peluquería La Duquesa en [MUNICIPIO]. Corte, color, mechas y peinados. Elige servicio, día y hora y pide tu cita en un minuto.">
-<meta name="theme-color" content="#F7F0EA">
+<title>La Marquesa · Peluquería en Santa Cruz de Tenerife · Pide cita</title>
+<meta name="description" content="La Marquesa, espacio de peluquería con cita previa en Calle Imeldo Serís 100, Santa Cruz de Tenerife. Balayage, color, peinados y novias. Pide tu cita en un minuto.">
+<meta name="theme-color" content="#F6F2EC">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&amp;family=Figtree:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
 :root{
-  --fondo:#F7F0EA; --papel:#FFFCF9; --tinta:#221A1F; --suave:#5F5157; --linea:#E5D6CC;
-  --granate:#7D2235; --granate-osc:#5E1626; --oro:#B48A45; --rosa:#EBD3CC;
+  --fondo:#F6F2EC; --papel:#FFFDFA; --tinta:#262423; --suave:#5C5853; --linea:#E3DCD1;
+  --granate:#2F2D2B; --granate-osc:#161514; --oro:#A8864A; --rosa:#E9DFCC;
   --radio:18px; --titular:"Bodoni Moda",Georgia,serif; --texto:Figtree,system-ui,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -42,8 +42,8 @@ button{font:inherit;color:inherit;touch-action:manipulation;cursor:pointer}
 
 header{position:sticky;top:0;z-index:20;background:rgba(247,240,234,.96);border-bottom:1px solid var(--linea)}
 .cab{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:66px}
-.logo{font-family:var(--titular);font-size:24px;color:var(--tinta);text-decoration:none;white-space:nowrap;letter-spacing:.01em}
-.logo i{color:var(--granate)}
+.logo{font-family:var(--titular);font-size:21px;font-weight:500;color:var(--tinta);text-decoration:none;white-space:nowrap;letter-spacing:.14em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+.logo .m{display:grid;place-items:center;width:34px;height:34px;border:1.5px solid var(--oro);color:var(--oro);font-size:18px;letter-spacing:0}
 .nav{display:none;gap:26px}
 .nav a{color:var(--tinta);text-decoration:none;font-weight:600}
 .cab .btn{min-height:46px;padding:0 18px;font-size:15px}
@@ -52,12 +52,12 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,240,234,.96);border-
 /* Portada */
 .portada{padding:44px 0 64px;display:grid;gap:36px}
 .portada h1{font-size:clamp(46px,11.5vw,92px)}
-.portada h1 em{color:var(--granate)}
+.portada h1 em{color:#86672F}
 .portada .sub{font-size:19px;color:var(--suave);max-width:29em;margin:22px 0 30px}
 .acciones{display:flex;flex-wrap:wrap;gap:12px}
 .datos-rapidos{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;color:var(--suave);font-size:15px}
 .datos-rapidos span{display:inline-flex;align-items:center;gap:8px}
-.foto{position:relative;overflow:hidden;background:repeating-linear-gradient(-45deg,#EFE3DB 0 14px,#EBDDD4 14px 28px);display:grid;place-items:center;text-align:center;color:var(--suave);font-weight:600;font-size:15px;padding:20px}
+.foto{position:relative;overflow:hidden;background:repeating-linear-gradient(-45deg,#EEE8DF 0 14px,#E8E1D6 14px 28px);display:grid;place-items:center;text-align:center;color:var(--suave);font-weight:600;font-size:15px;padding:20px}
 .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 /* Firma: marco con arco, como el de un espejo de tocador */
 .espejo{border-radius:999px 999px var(--radio) var(--radio);aspect-ratio:4/5;max-width:440px;width:100%;justify-self:center;outline:1.5px solid var(--oro);outline-offset:10px;margin:12px}
@@ -88,14 +88,14 @@ section{padding:72px 0}
 .op{position:relative;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:56px;padding:12px 16px;border:1.5px solid #D6C3B8;border-radius:14px;background:#fff;cursor:pointer;font-weight:600}
 .op input{position:absolute;opacity:0;pointer-events:none}
 .op .p{font-weight:400;color:var(--suave);font-size:15px;white-space:nowrap}
-.op:has(input:checked){border-color:var(--granate);background:#FBF1F0;box-shadow:0 0 0 1px var(--granate)}
+.op:has(input:checked){border-color:var(--granate);background:#F3EEE6;box-shadow:0 0 0 1px var(--granate)}
 .op:has(input:focus-visible){outline:3px solid var(--oro);outline-offset:2px}
 .dias{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory;overscroll-behavior-x:contain}
 .dia{flex:none;scroll-snap-align:start;width:72px;min-height:78px;border:1.5px solid #D6C3B8;border-radius:14px;background:#fff;display:grid;place-items:center;padding:8px 4px;line-height:1.2}
 .dia b{font-family:var(--titular);font-size:24px;font-weight:500}
 .dia span{font-size:13px;color:var(--suave);text-transform:capitalize}
 .dia[aria-pressed="true"]{border-color:var(--granate);background:var(--granate);color:#fff}
-.dia[aria-pressed="true"] span{color:#F3DCDD}
+.dia[aria-pressed="true"] span{color:#E9DFCC}
 .dia[disabled]{opacity:.45;cursor:not-allowed;text-decoration:line-through}
 .horas{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:8px;margin-top:8px}
 .hora{min-height:46px;border:1.5px solid #D6C3B8;border-radius:12px;background:#fff;font-weight:600;font-variant-numeric:tabular-nums}
@@ -118,7 +118,7 @@ section{padding:72px 0}
 .invitacion{text-align:center;border:1.5px solid var(--oro);border-radius:20px;padding:28px 18px;background:#fff;position:relative}
 .invitacion::before{content:"";position:absolute;inset:6px;border:1px solid var(--rosa);border-radius:15px;pointer-events:none}
 .invitacion h3{font-size:34px;margin:8px 0 10px}
-.invitacion .cuando{font-family:var(--titular);font-size:22px;font-style:italic;color:var(--granate);margin-bottom:12px}
+.invitacion .cuando{font-family:var(--titular);font-size:22px;font-style:italic;color:#7A5F2E;margin-bottom:12px}
 .invitacion p{color:var(--suave);max-width:28em;margin:0 auto 12px}
 .mensaje-previo{white-space:pre-wrap;text-align:left;background:var(--fondo);border-radius:14px;padding:14px 16px;font-size:15px;margin:16px 0}
 .botones{display:grid;gap:10px}
@@ -144,9 +144,9 @@ summary::after{content:"";width:11px;height:11px;flex:none;border-right:2px soli
 details[open] summary::after{transform:rotate(-135deg)}
 details p{color:var(--suave);padding-bottom:20px}
 
-.final{background:var(--granate-osc);color:#F6E4E2;text-align:center}
-.final h2{color:#fff;font-size:clamp(40px,9vw,76px);margin-bottom:16px}
-.final p{color:#EBCFCF;max-width:30em;margin:0 auto 28px}
+.final{background:var(--granate-osc);color:#EDE6DA;text-align:center}
+.final h2{color:#fff;font-style:italic;font-size:clamp(40px,9vw,76px);margin-bottom:16px}
+.final p{color:#CFC6B8;max-width:30em;margin:0 auto 28px}
 .final .btn{background:#fff;border-color:#fff;color:var(--granate-osc)}
 footer{background:var(--tinta);color:#C9B8B4;font-size:14px;padding:22px 0 calc(22px + env(safe-area-inset-bottom))}
 footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between}
@@ -163,7 +163,7 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
 
 <header>
   <div class="envolver cab">
-    <a class="logo" href="#inicio">La <i>Duquesa</i></a>
+    <a class="logo" href="#inicio" aria-label="La Marquesa, ir al inicio"><span class="m" aria-hidden="true">M</span>La Marquesa</a>
     <nav class="nav" aria-label="Principal">
       <a href="#servicios">Servicios</a>
       <a href="#trabajos">Trabajos</a>
@@ -177,33 +177,33 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
 <main id="contenido">
   <section id="inicio" class="envolver portada" style="padding-top:44px">
     <div>
-      <h1>Sal de aquí <em>sintiéndote duquesa.</em></h1>
-      <p class="sub">Corte, color y peinado en [MUNICIPIO]. Elige el servicio y la hora que te viene bien, y te confirmamos la cita por WhatsApp.</p>
+      <h1>Déjate <em>mimar.</em></h1>
+      <p class="sub">Espacio de peluquería con cita previa en Imeldo Serís, en el centro de Santa Cruz. Balayage, color, peinados y novias. Elige tu hora aquí y te la confirmamos por WhatsApp.</p>
       <div class="acciones">
         <a class="btn" href="#cita">Pedir mi cita</a>
         <a class="btn btn-claro" href="#servicios">Ver servicios y precios</a>
       </div>
       <div class="datos-rapidos">
-        <span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>[DIRECCIÓN]</span>
+        <span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Calle Imeldo Serís 100, Santa Cruz</span>
         <span id="hoy-abre"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="hoy-texto">[HORARIO]</span></span>
       </div>
     </div>
-    <div class="foto espejo" data-foto="portada">[FOTO: el salón o un peinado suyo]</div>
+    <div class="foto espejo" data-foto="portada">[FOTO: recogido de novia frente al espejo dorado]</div>
   </section>
 
   <section id="servicios" class="blanco">
     <div class="envolver">
       <h2 class="titulo-sec">Servicios y precios</h2>
-      <p class="intro">El precio final de color y mechas depende del largo y la cantidad de pelo. Si dudas, ponlo en la nota de la cita y te orientamos.</p>
+      <p class="intro">El precio final del color y el balayage depende del largo y la cantidad de pelo. Si dudas, ponlo en la nota de la cita y te orientamos.</p>
       <div class="carta" id="carta"></div>
-      <p class="nota">[CONFIRMAR SERVICIOS Y PRECIOS CON LA DUQUESA]</p>
+      <p class="nota">[CONFIRMAR SERVICIOS Y PRECIOS CON LA MARQUESA]</p>
     </div>
   </section>
 
   <section id="cita">
     <div class="envolver">
       <h2 class="titulo-sec" style="text-align:center">Pide tu cita</h2>
-      <p class="intro" style="text-align:center;margin-left:auto;margin-right:auto">Tres pasos y listo. Nos llega tu cita al momento y te confirmamos por WhatsApp.</p>
+      <p class="intro" style="text-align:center;margin-left:auto;margin-right:auto">Trabajamos con cita previa. Tres pasos y nos llega tu cita al momento; te la confirmamos por WhatsApp.</p>
 
       <div class="cita">
         <form id="form-cita" novalidate>
@@ -254,11 +254,11 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
   <section id="trabajos" class="blanco">
     <div class="envolver">
       <h2 class="titulo-sec">Nuestros trabajos</h2>
-      <p class="intro">Cortes, colores y peinados hechos en el salón. Hay más en nuestro Instagram.</p>
+      <p class="intro">Balayage, recogidos y peinados de novia hechos en el salón. Hay muchos más en nuestro Instagram, @lamarquesapeluqueria.</p>
       <div class="galeria">
-        <div class="foto" data-foto="trabajo-0">[FOTO: corte]</div>
-        <div class="foto" data-foto="trabajo-1">[FOTO: color o mechas]</div>
-        <div class="foto" data-foto="trabajo-2">[FOTO: peinado de evento]</div>
+        <div class="foto" data-foto="trabajo-0">[FOTO: balayage]</div>
+        <div class="foto" data-foto="trabajo-1">[FOTO: recogido con tocado]</div>
+        <div class="foto" data-foto="trabajo-2">[FOTO: lavado y masaje]</div>
         <div class="foto" data-foto="trabajo-3">[FOTO: el salón por dentro]</div>
       </div>
       <p style="margin-top:22px"><a class="btn btn-claro" id="ig" href="#" target="_blank" rel="noopener">Ver más en Instagram</a></p>
@@ -273,10 +273,10 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
       </div>
       <div>
         <h2 class="titulo-sec">Dónde estamos</h2>
-        <p class="intro" style="margin-bottom:20px">[DIRECCIÓN COMPLETA]<br>[CÓMO LLEGAR O DÓNDE APARCAR]</p>
+        <p class="intro" style="margin-bottom:20px">Calle Imeldo Serís, 100<br>Santa Cruz de Tenerife<br>Teléfonos: <a href="tel:+34922107192">922 107 192</a> · <a href="tel:+34634768179">634 768 179</a></p>
         <div class="acciones">
           <a class="btn btn-claro" id="mapa" href="#" target="_blank" rel="noopener">Cómo llegar</a>
-          <a class="btn btn-claro" id="llamar" href="#">Llamar</a>
+          <a class="btn btn-claro" id="llamar" href="#">Llamar al salón</a>
         </div>
       </div>
     </div>
@@ -288,14 +288,14 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
       <details open><summary>¿Cuándo sé si mi cita está confirmada?</summary><p>Cuando nos llega tu mensaje te contestamos por WhatsApp. Si la hora está ocupada, te proponemos la más cercana.</p></details>
       <details><summary>¿Y si no puedo ir?</summary><p>Escríbenos por el mismo chat para cambiarla o anularla. [POLÍTICA DE CANCELACIÓN]</p></details>
       <details><summary>¿Cómo puedo pagar?</summary><p>[FORMAS DE PAGO]</p></details>
-      <details><summary>¿Hacéis peinados para bodas y eventos?</summary><p>[SÍ/NO Y CONDICIONES]. Pídelo en la cita como «Peinado de evento» y cuéntanos la fecha en la nota.</p></details>
+      <details><summary>¿Peináis novias?</summary><p>Sí. Pide cita como «Novias» y cuéntanos en la nota la fecha de la boda. [CONDICIONES: PRUEBA, DESPLAZAMIENTO]</p></details>
     </div>
   </section>
 
   <section class="final">
     <div class="envolver">
-      <h2>Tu próxima cita, en un minuto.</h2>
-      <p>Elige servicio, día y hora, y te confirmamos por WhatsApp.</p>
+      <h2>Déjate mimar.</h2>
+      <p>Elige servicio, día y hora en un minuto. Te confirmamos la cita por WhatsApp.</p>
       <a class="btn" href="#cita">Pedir mi cita</a>
     </div>
   </section>
@@ -303,7 +303,7 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
 
 <footer>
   <div class="envolver">
-    <span>La Duquesa · Peluquería · [MUNICIPIO]</span>
+    <span>La Marquesa · Espacio de peluquería · Calle Imeldo Serís 100, Santa Cruz de Tenerife</span>
     <span>Web hecha por Cardón Estudio</span>
   </div>
 </footer>
@@ -313,24 +313,24 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
    AJUSTES DEL SALÓN — lo único que hay que tocar
    ========================================================= */
 var AJUSTES = {
-  nombre: 'La Duquesa',
-  whatsapp: '',            // [WHATSAPP DEL SALÓN] con prefijo y sin espacios, ej. '34612345678'. Ahí llegan las citas.
-  telefono: '',            // [TELÉFONO] para el botón Llamar, ej. '+34 922 00 00 00'. Vacío = no aparece.
+  nombre: 'La Marquesa',
+  whatsapp: '34634768179', // móvil del salón (634 768 179). CONFIRMAR que es el que tiene WhatsApp. Ahí llegan las citas.
+  telefono: '+34922107192', // fijo del salón, para el botón Llamar
   correoCitas: '',         // [CORREO] opcional: cada cita le llega también por correo AUTOMÁTICAMENTE (FormSubmit).
-  instagram: '',           // [INSTAGRAM] usuario sin @. Vacío = no aparece el botón.
-  mapa: '',                // [ENLACE DE GOOGLE MAPS]. Vacío = no aparece el botón.
+  instagram: 'lamarquesapeluqueria',
+  mapa: 'https://www.google.com/maps/search/?api=1&query=Calle+Imeldo+Ser%C3%ADs+100,+Santa+Cruz+de+Tenerife',
   diasVista: 21,           // cuántos días se pueden elegir
   intervalo: 30,           // minutos entre horas
-  // Horario de EJEMPLO. 0 = domingo ... 6 = sábado. Cada día: tramos [abre, cierra]. null = cerrado.
-  horarioConfirmado: false,
+  // Horario de su Instagram. 0 = domingo ... 6 = sábado. Cada día: tramos [abre, cierra]. null = cerrado.
+  horarioConfirmado: true,
   horario: {
     0: null,
-    1: [['09:30','13:30'],['16:00','20:00']],
-    2: [['09:30','13:30'],['16:00','20:00']],
-    3: [['09:30','13:30'],['16:00','20:00']],
-    4: [['09:30','13:30'],['16:00','20:00']],
-    5: [['09:30','13:30'],['16:00','20:00']],
-    6: [['09:30','14:00']]
+    1: null,
+    2: [['10:00','18:00']],
+    3: [['10:00','18:00']],
+    4: [['10:00','18:00']],
+    5: [['10:00','18:00']],
+    6: [['09:00','13:00']]
   },
   fotos: { 'portada':'', 'trabajo-0':'', 'trabajo-1':'', 'trabajo-2':'', 'trabajo-3':'' }
 };
@@ -339,9 +339,10 @@ var SERVICIOS = [
   { id:'corte',    nombre:'Corte y peinado',      desc:'Lavado, corte y secado a tu gusto.',          precio:'' },
   { id:'peinado',  nombre:'Lavar y peinar',       desc:'Secado con cepillo, ondas o plancha.',         precio:'' },
   { id:'color',    nombre:'Color',                desc:'Tinte de raíz o completo.',                    precio:'' },
-  { id:'mechas',   nombre:'Mechas',               desc:'Mechas, balayage o reflejos.',                 precio:'' },
-  { id:'trat',     nombre:'Tratamiento',          desc:'Hidratación o reparación para pelo dañado.',   precio:'' },
-  { id:'evento',   nombre:'Peinado de evento',    desc:'Bodas, comuniones y fiestas.',                 precio:'' }
+  { id:'balayage', nombre:'Balayage',             desc:'Aclarado a mano, con transición natural.',     precio:'' },
+  { id:'trat',     nombre:'Tratamiento y masaje', desc:'Lavado con masaje e hidratación del pelo.',    precio:'' },
+  { id:'evento',   nombre:'Recogido o peinado',   desc:'Para bodas, comuniones y fiestas.',            precio:'' },
+  { id:'novias',   nombre:'Novias',               desc:'Tu peinado para el gran día.',                 precio:'' }
 ];
 
 /* ========================================================= */
@@ -358,7 +359,7 @@ var SERVICIOS = [
   // Fotos
   document.querySelectorAll('[data-foto]').forEach(function(el){
     var src = AJUSTES.fotos[el.dataset.foto]; if (!src) return;
-    var img = new Image(); img.alt = 'Trabajo de la peluquería La Duquesa'; img.decoding='async';
+    var img = new Image(); img.alt = 'Trabajo de la peluquería La Marquesa'; img.decoding='async';
     if (el.dataset.foto==='portada') img.fetchPriority='high'; else img.loading='lazy';
     img.src = src; el.textContent=''; el.appendChild(img);
   });
