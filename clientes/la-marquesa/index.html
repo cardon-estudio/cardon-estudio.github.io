@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#F6F2EC">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&amp;family=Figtree:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;0,6..96,700;1,6..96,600&amp;family=Figtree:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <style>
 :root{
   --fondo:#F6F2EC; --papel:#FFFDFA; --tinta:#262423; --suave:#5C5853; --linea:#E3DCD1;
@@ -20,7 +20,7 @@
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--fondo);color:var(--tinta);font-family:var(--texto);font-size:17px;line-height:1.55}
 img,svg{max-width:100%;display:block}
-h1,h2,h3{font-family:var(--titular);font-weight:500;line-height:1.02;letter-spacing:-.015em;margin:0;text-wrap:balance}
+h1,h2,h3{font-family:var(--titular);font-weight:600;line-height:1.04;letter-spacing:-.01em;margin:0;text-wrap:balance}
 p{margin:0}
 a{color:var(--granate);text-underline-offset:3px}
 ::selection{background:var(--granate);color:#fff}
@@ -42,7 +42,7 @@ button{font:inherit;color:inherit;touch-action:manipulation;cursor:pointer}
 
 header{position:sticky;top:0;z-index:20;background:rgba(247,240,234,.96);border-bottom:1px solid var(--linea)}
 .cab{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:66px}
-.logo{font-family:var(--titular);font-size:21px;font-weight:500;color:var(--tinta);text-decoration:none;white-space:nowrap;letter-spacing:.14em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+.logo{font-family:var(--titular);font-size:20px;font-weight:600;color:var(--tinta);text-decoration:none;white-space:nowrap;letter-spacing:.14em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
 .logo .m{display:grid;place-items:center;width:34px;height:34px;border:1.5px solid var(--oro);color:var(--oro);font-size:18px;letter-spacing:0}
 .nav{display:none;gap:26px}
 .nav a{color:var(--tinta);text-decoration:none;font-weight:600}
@@ -51,7 +51,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,240,234,.96);border-
 
 /* Portada */
 .portada{padding:44px 0 64px;display:grid;gap:36px}
-.portada h1{font-size:clamp(46px,11.5vw,92px)}
+.portada h1{font-size:clamp(58px,15vw,104px);font-weight:700;letter-spacing:-.02em}
 .portada h1 em{color:#86672F}
 .portada .sub{font-size:19px;color:var(--suave);max-width:29em;margin:22px 0 30px}
 .acciones{display:flex;flex-wrap:wrap;gap:12px}
@@ -60,11 +60,14 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,240,234,.96);border-
 .foto{position:relative;overflow:hidden;background:repeating-linear-gradient(-45deg,#EEE8DF 0 14px,#E8E1D6 14px 28px);display:grid;place-items:center;text-align:center;color:var(--suave);font-weight:600;font-size:15px;padding:20px}
 .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 /* Firma: marco con arco, como el de un espejo de tocador */
-.espejo{border-radius:999px 999px var(--radio) var(--radio);aspect-ratio:4/5;max-width:440px;width:100%;justify-self:center;outline:1.5px solid var(--oro);outline-offset:10px;margin:12px}
+.espejo{border-radius:999px 999px var(--radio) var(--radio);aspect-ratio:4/5;max-width:420px;width:calc(100% - 24px);justify-self:center;outline:1.5px solid var(--oro);outline-offset:10px;margin:12px}
 @media (min-width:860px){.portada{grid-template-columns:1.15fr .85fr;align-items:center;padding:64px 0 96px}}
 
 section{padding:72px 0}
-.titulo-sec{font-size:clamp(36px,8vw,56px);margin-bottom:14px}
+section.envolver{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+.titulo-sec::after{content:"";display:block;width:56px;height:1.5px;background:var(--oro);margin-top:18px}
+.centrado::after{margin-left:auto;margin-right:auto}
+.titulo-sec{font-size:clamp(38px,8.5vw,58px);margin-bottom:18px}
 .intro{color:var(--suave);max-width:34em;margin-bottom:32px}
 .blanco{background:var(--papel)}
 
@@ -72,7 +75,7 @@ section{padding:72px 0}
 .carta{display:grid;gap:0 56px}
 @media (min-width:860px){.carta{grid-template-columns:1fr 1fr}}
 .servicio{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:18px 0;border-bottom:1px solid var(--linea)}
-.servicio h3{font-size:24px}
+.servicio h3{font-size:25px}
 .servicio .precio{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;align-self:start;padding-top:4px}
 .servicio p{grid-column:1/-1;color:var(--suave);font-size:15px}
 .nota{font-size:14px;color:var(--suave);margin-top:18px}
@@ -81,8 +84,8 @@ section{padding:72px 0}
 .cita{background:var(--papel);border:1px solid var(--linea);border-radius:24px;padding:22px 18px;max-width:760px;margin:0 auto;box-shadow:0 18px 40px -24px rgba(34,26,31,.35)}
 @media (min-width:600px){.cita{padding:34px}}
 .paso{border:0;padding:0;margin:0 0 30px;min-width:0}
-.paso legend{font-family:var(--titular);font-size:26px;margin-bottom:14px;padding:0}
-.paso legend small{display:block;font-family:var(--texto);font-size:14px;color:var(--suave);margin-top:4px}
+.paso legend{font-family:var(--titular);font-weight:600;font-size:28px;margin-bottom:14px;padding:0}
+.paso legend small{display:block;font-family:var(--texto);font-weight:400;font-size:14px;color:var(--suave);margin-top:4px}
 .opciones{display:grid;gap:8px}
 @media (min-width:600px){.opciones{grid-template-columns:1fr 1fr}}
 .op{position:relative;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:56px;padding:12px 16px;border:1.5px solid #D6C3B8;border-radius:14px;background:#fff;cursor:pointer;font-weight:600}
@@ -92,11 +95,11 @@ section{padding:72px 0}
 .op:has(input:focus-visible){outline:3px solid var(--oro);outline-offset:2px}
 .dias{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory;overscroll-behavior-x:contain}
 .dia{flex:none;scroll-snap-align:start;width:72px;min-height:78px;border:1.5px solid #D6C3B8;border-radius:14px;background:#fff;display:grid;place-items:center;padding:8px 4px;line-height:1.2}
-.dia b{font-family:var(--titular);font-size:24px;font-weight:500}
+.dia b{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
 .dia span{font-size:13px;color:var(--suave);text-transform:capitalize}
 .dia[aria-pressed="true"]{border-color:var(--granate);background:var(--granate);color:#fff}
 .dia[aria-pressed="true"] span{color:#E9DFCC}
-.dia[disabled]{opacity:.45;cursor:not-allowed;text-decoration:line-through}
+.dia[disabled]{opacity:.55;cursor:not-allowed;background:transparent;border-style:dashed}
 .horas{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:8px;margin-top:8px}
 .hora{min-height:46px;border:1.5px solid #D6C3B8;border-radius:12px;background:#fff;font-weight:600;font-variant-numeric:tabular-nums}
 .hora[aria-pressed="true"]{border-color:var(--granate);background:var(--granate);color:#fff}
@@ -117,7 +120,7 @@ section{padding:72px 0}
 /* Confirmación: tarjeta tipo invitación */
 .invitacion{text-align:center;border:1.5px solid var(--oro);border-radius:20px;padding:28px 18px;background:#fff;position:relative}
 .invitacion::before{content:"";position:absolute;inset:6px;border:1px solid var(--rosa);border-radius:15px;pointer-events:none}
-.invitacion h3{font-size:34px;margin:8px 0 10px}
+.invitacion h3{font-size:34px;font-weight:700;margin:8px 0 10px}
 .invitacion .cuando{font-family:var(--titular);font-size:22px;font-style:italic;color:#7A5F2E;margin-bottom:12px}
 .invitacion p{color:var(--suave);max-width:28em;margin:0 auto 12px}
 .mensaje-previo{white-space:pre-wrap;text-align:left;background:var(--fondo);border-radius:14px;padding:14px 16px;font-size:15px;margin:16px 0}
@@ -202,7 +205,7 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
 
   <section id="cita">
     <div class="envolver">
-      <h2 class="titulo-sec" style="text-align:center">Pide tu cita</h2>
+      <h2 class="titulo-sec centrado" style="text-align:center">Pide tu cita</h2>
       <p class="intro" style="text-align:center;margin-left:auto;margin-right:auto">Trabajamos con cita previa. Tres pasos y nos llega tu cita al momento; te la confirmamos por WhatsApp.</p>
 
       <div class="cita">
