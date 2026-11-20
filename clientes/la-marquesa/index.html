@@ -130,6 +130,8 @@ section.envolver{padding-left:max(18px,env(safe-area-inset-left));padding-right:
 .galeria{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .galeria .foto{aspect-ratio:3/4;border-radius:var(--radio);font-size:14px}
 @media (min-width:860px){.galeria{grid-template-columns:repeat(4,1fr)}}
+.ig-posts{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,326px),1fr));align-items:start}
+.ig-posts .instagram-media{margin:0!important;min-width:0!important;width:100%!important;max-width:540px!important;border-radius:var(--radio)!important}
 
 /* Dónde */
 .donde{display:grid;gap:28px}
@@ -258,7 +260,8 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
     <div class="envolver">
       <h2 class="titulo-sec">Nuestros trabajos</h2>
       <p class="intro">Balayage, recogidos y peinados de novia hechos en el salón. Hay muchos más en nuestro Instagram, @lamarquesapeluqueria.</p>
-      <div class="galeria">
+      <div class="ig-posts" id="ig-posts" hidden></div>
+      <div class="galeria" id="galeria">
         <div class="foto" data-foto="trabajo-0">[FOTO: balayage]</div>
         <div class="foto" data-foto="trabajo-1">[FOTO: recogido con tocado]</div>
         <div class="foto" data-foto="trabajo-2">[FOTO: lavado y masaje]</div>
@@ -335,7 +338,12 @@ var AJUSTES = {
     5: [['10:00','18:00']],
     6: [['09:00','13:00']]
   },
-  fotos: { 'portada':'', 'trabajo-0':'', 'trabajo-1':'', 'trabajo-2':'', 'trabajo-3':'' }
+  fotos: { 'portada':'', 'trabajo-0':'', 'trabajo-1':'', 'trabajo-2':'', 'trabajo-3':'' },
+  // Publicaciones de su Instagram que se muestran en «Nuestros trabajos».
+  // Pega aquí los enlaces (en la app: ··· de la publicación > Copiar enlace). Vacío = recuadros de fotos.
+  publicaciones: [
+    // 'https://www.instagram.com/p/XXXXXXXXX/',
+  ]
 };
 // Servicios: precio '' = se muestra [PRECIO]
 var SERVICIOS = [
@@ -366,6 +374,16 @@ var SERVICIOS = [
     if (el.dataset.foto==='portada') img.fetchPriority='high'; else img.loading='lazy';
     img.src = src; el.textContent=''; el.appendChild(img);
   });
+  // Publicaciones de Instagram incrustadas
+  var pubs = (AJUSTES.publicaciones||[]).filter(function(u){ return /^https:\/\/www\.instagram\.com\/(p|reel)\/[\w-]+/.test(u); });
+  if (pubs.length){
+    $('ig-posts').innerHTML = pubs.map(function(u){
+      var limpio = u.split('?')[0];
+      return '<blockquote class="instagram-media" data-instgrm-permalink="'+limpio+'?utm_source=ig_embed" data-instgrm-version="14"><a href="'+limpio+'" target="_blank" rel="noopener">Ver esta publicación en Instagram</a></blockquote>';
+    }).join('');
+    $('ig-posts').hidden = false; $('galeria').hidden = true;
+    var sc = document.createElement('script'); sc.async = true; sc.src = 'https://www.instagram.com/embed.js'; document.body.appendChild(sc);
+  }
   // Enlaces opcionales
   function enlace(id, url){ var a=$(id); if (url) a.href=url; else a.hidden=true; }
   enlace('ig', AJUSTES.instagram ? 'https://www.instagram.com/'+AJUSTES.instagram+'/' : '');
