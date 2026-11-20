@@ -47,6 +47,16 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,240,234,.96);border-
 .nav{display:none;gap:26px}
 .nav a{color:var(--tinta);text-decoration:none;font-weight:600}
 .cab .btn{min-height:46px;padding:0 18px;font-size:15px}
+.cab-der{display:flex;align-items:center;gap:8px}
+.cab .btn{white-space:nowrap}
+.ig-ico{flex:none}
+@media (max-width:420px){.logo{font-size:16px;letter-spacing:.08em;gap:8px}.logo .m{width:30px;height:30px;font-size:16px}.cab .btn{padding:0 14px}}
+.ig-franja b{overflow-wrap:anywhere}
+.ig-ico{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:var(--tinta);border:1.5px solid var(--linea);text-decoration:none}
+@media (hover:hover) and (pointer:fine){.ig-ico:hover{border-color:var(--oro);color:#86672F}}
+.ig-franja{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:26px;padding:20px;border:1.5px solid var(--oro);border-radius:var(--radio);background:var(--fondo)}
+.ig-franja b{font-family:var(--titular);font-size:22px;font-weight:600;display:block}
+.ig-franja span{color:var(--suave);font-size:15px}
 @media (min-width:860px){.nav{display:flex}}
 
 /* Portada */
@@ -175,7 +185,10 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
       <a href="#donde">Horario</a>
       <a href="#dudas">Dudas</a>
     </nav>
-    <a class="btn" href="#cita">Pedir cita</a>
+    <div class="cab-der">
+      <a class="ig-ico" data-ig href="#" target="_blank" rel="noopener" aria-label="Instagram de La Marquesa"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a class="btn" href="#cita">Pedir cita</a>
+    </div>
   </div>
 </header>
 
@@ -186,7 +199,7 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
       <p class="sub">Espacio de peluquería con cita previa en Imeldo Serís, en el centro de Santa Cruz. Balayage, color, peinados y novias. Elige tu hora aquí y te la confirmamos por WhatsApp.</p>
       <div class="acciones">
         <a class="btn" href="#cita">Pedir mi cita</a>
-        <a class="btn btn-claro" href="#servicios">Ver servicios y precios</a>
+        <a class="btn btn-claro" data-ig href="#" target="_blank" rel="noopener"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Ver nuestro Instagram</a>
       </div>
       <div class="datos-rapidos">
         <span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Calle Imeldo Serís 100, Santa Cruz</span>
@@ -267,7 +280,10 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
         <div class="foto" data-foto="trabajo-2">[FOTO: lavado y masaje]</div>
         <div class="foto" data-foto="trabajo-3">[FOTO: el salón por dentro]</div>
       </div>
-      <p style="margin-top:22px"><a class="btn btn-claro" id="ig" href="#" target="_blank" rel="noopener">Ver más en Instagram</a></p>
+      <div class="ig-franja">
+        <div><b>@lamarquesapeluqueria</b><span>Novias, recogidos y balayage nuevos cada semana.</span></div>
+        <a class="btn" id="ig" data-ig href="#" target="_blank" rel="noopener"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Ir a Instagram</a>
+      </div>
     </div>
   </section>
 
@@ -309,7 +325,7 @@ footer .envolver{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space
 
 <footer>
   <div class="envolver">
-    <span>La Marquesa · Espacio de peluquería · Calle Imeldo Serís 100, Santa Cruz de Tenerife</span>
+    <span>La Marquesa · Espacio de peluquería · Calle Imeldo Serís 100, Santa Cruz de Tenerife · <a data-ig href="#" target="_blank" rel="noopener" style="color:#EDE6DA">Instagram</a></span>
     <span>Web hecha por Cardón Estudio</span>
   </div>
 </footer>
@@ -386,7 +402,8 @@ var SERVICIOS = [
   }
   // Enlaces opcionales
   function enlace(id, url){ var a=$(id); if (url) a.href=url; else a.hidden=true; }
-  enlace('ig', AJUSTES.instagram ? 'https://www.instagram.com/'+AJUSTES.instagram+'/' : '');
+  var urlIG = AJUSTES.instagram ? 'https://www.instagram.com/'+AJUSTES.instagram+'/' : '';
+  document.querySelectorAll('[data-ig]').forEach(function(a){ if (urlIG) a.href = urlIG; else a.hidden = true; });
   enlace('mapa', AJUSTES.mapa);
   enlace('llamar', AJUSTES.telefono ? 'tel:'+AJUSTES.telefono.replace(/[^\d+]/g,'') : '');
   if (!AJUSTES.whatsapp) $('enviar').textContent = 'Pedir mi cita';
