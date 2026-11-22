@@ -48,6 +48,16 @@ def segmentos(wav, d):
     return segs
 
 
+def hoja(page, tmp, T, ts=None):
+    """Hoja de prueba: por defecto 8 fotogramas repartidos; en boceto, uno por escena."""
+    ts = ts or [round(T * k / 9, 2) for k in range(1, 9)]
+    prev = os.path.join(tmp, "prueba"); os.makedirs(prev, exist_ok=True)
+    sh(f"node '{AQUI}/motor/shot.js' '{page}' '{prev}' " + " ".join(map(str, ts)))
+    ins = " ".join(f"-i '{prev}/t{x}.jpg'" for x in ts)
+    sh(f"ffmpeg -hide_banner -loglevel error -y {ins} -filter_complex \"hstack={len(ts)},scale={min(2600, 260*len(ts))}:-1\" '{tmp}/hoja.jpg'")
+    print(f"Hoja de prueba: {tmp}/hoja.jpg")
+
+
 def main():
     cfg_path = sys.argv[1]
     prueba = "--solo-prueba" in sys.argv
@@ -57,21 +67,31 @@ def main():
     os.makedirs(tmp, exist_ok=True)
     os.makedirs(os.path.join(AQUI, "salida"), exist_ok=True)
 
-    # 1 · voz
-    mp3 = os.path.join(tmp, "voz.mp3")
-    src = cfg["voz"]
-    if src.startswith("http"):
-        if not os.path.exists(mp3):
-            urllib.request.urlretrieve(src, mp3)
-    else:
-        sh(f"cp '{src}' '{mp3}'")
+    # 1 · voz (o, en modo --boceto, tiempos estimados SIN gastar créditos)
+    boceto = "--boceto" in sys.argv
+    if boceto:
+        prueba = True
     vel = cfg.get("velocidad", 1.10)
     vf = os.path.join(tmp, "vf.wav")
-    sh(f"ffmpeg -hide_banner -loglevel error -y -i '{mp3}' -af atempo={vel} -ar {SR} -ac 1 '{vf}'")
-
     frases = cfg["frases"]
     segs = None
-    for d in (0.15, 0.12, 0.18, 0.1, 0.22, 0.25, 0.08, 0.3):
+    if boceto:
+        segs, t0 = [], 0.0
+        for f in frases:          # ~2,9 palabras/s de Mateo, más la aceleración
+            dur = max(0.4, len(re.sub(r"[*|\d]", "", f).split()) / (2.9 * vel))
+            segs.append([t0, t0 + dur]); t0 += dur + 0.35
+        sh(f"ffmpeg -hide_banner -loglevel error -y -f lavfi -i anullsrc=r={SR}:cl=mono -t {t0:.2f} '{vf}'")
+    else:
+        mp3 = os.path.join(tmp, "voz.mp3")
+        src = cfg["voz"]
+        if src.startswith("http"):
+            if not os.path.exists(mp3):
+                urllib.request.urlretrieve(src, mp3)
+        else:
+            sh(f"cp '{src}' '{mp3}'")
+        sh(f"ffmpeg -hide_banner -loglevel error -y -i '{mp3}' -af atempo={vel} -ar {SR} -ac 1 '{vf}'")
+
+    for d in ((0.15, 0.12, 0.18, 0.1, 0.22, 0.25, 0.08, 0.3) if not boceto else ()):
         s = segmentos(vf, d)
         if len(s) == len(frases):
             segs = s
@@ -127,6 +147,13 @@ def main():
     page = os.path.join(tmp, "video.html")
     open(page, "w").write(html)
 
+    if boceto:
+        ini = [p[0] for p in ph] + ([cd[0]] if cd else []) + [T]
+        ini = sorted(ini)
+        hoja(page, tmp, T, [round((a + b) / 2, 2) for a, b in zip(ini, ini[1:])])
+        print(f"Boceto sin voz ({T:.1f} s estimados). Revisa la hoja antes de gastar créditos.")
+        return
+
     # 4 · música, efectos y master
     sfx = {"duration": T, "hits": [tiempos[i][0] for i in cfg.get("golpes", []) if i in tiempos],
            "whooshes": [p[0] for p in ph[1:]] + ([cd[0]] if cd else [])}
@@ -154,12 +181,7 @@ def main():
     print(f"Audio: {resumen} · duración {T:.1f} s")
 
     # 5 · hoja de prueba y render
-    ts = [round(T * k / 9, 2) for k in range(1, 9)]
-    prev = os.path.join(tmp, "prueba"); os.makedirs(prev, exist_ok=True)
-    sh(f"node '{AQUI}/motor/shot.js' '{page}' '{prev}' " + " ".join(map(str, ts)))
-    ins = " ".join(f"-i '{prev}/t{x}.jpg'" for x in ts)
-    sh(f"ffmpeg -hide_banner -loglevel error -y {ins} -filter_complex \"hstack=8,scale=2000:-1\" '{tmp}/hoja.jpg'")
-    print(f"Hoja de prueba: {tmp}/hoja.jpg")
+    hoja(page, tmp, T)
     if prueba:
         return
     frames = os.path.join(tmp, "frames"); os.makedirs(frames, exist_ok=True)
