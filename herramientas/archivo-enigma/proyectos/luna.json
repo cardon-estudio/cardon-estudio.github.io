@@ -1,0 +1,62 @@
+{
+ "nombre": "luna",
+ "voz": "RUTA_O_URL_DEL_MP3",
+ "velocidad": 1.15,
+ "escenas": "escenas/luna.js",
+ "frases": [
+  "El testigo jura que vio al ladrón a *medianoche...",
+  "a la luz de la *luna llena.",
+  "El detective sabe que *miente.",
+  "¿Por *qué?",
+  "Un *acertijo al día.",
+  "Roban un *cuadro de una casa junto al mar.",
+  "Es el favorito de *Elena:",
+  "lo pintó su *padre.",
+  "Un vecino dice que lo vio *todo.",
+  "«A las *doce en punto, la luna llena se *escondía detrás del monte...",
+  "y vi al ladrón saltar por la *ventana.»",
+  "El detective mira al *cielo...",
+  "y *sonríe.",
+  "Tienes diez *segundos.",
+  "*Piensa.",
+  "*Tiempo.",
+  "La luna llena *sale cuando se pone el sol...",
+  "y se *esconde cuando amanece.",
+  "Y aquí viene la clave:",
+  "a *medianoche,",
+  "la luna llena está en lo más *alto del cielo.",
+  "Nunca escondiéndose.",
+  "El vecino *mintió...",
+  "porque el ladrón era *él.",
+  "El cuadro estaba en su *garaje.",
+  "Caso *cerrado.",
+  "¿Lo habías *pillado?",
+  "Cuéntame en comentarios si lo *acertaste.",
+  "Y esta noche, si hay *luna llena...",
+  "fíjate bien *dónde está.",
+  "Síguenos para el próximo *expediente."
+ ],
+ "anclas": [
+  0,
+  4,
+  5,
+  8,
+  9,
+  11,
+  13,
+  15,
+  18,
+  22,
+  25
+ ],
+ "cuenta_atras_tras": 14,
+ "quitar": [
+  21
+ ],
+ "golpes": [
+  12,
+  20,
+  23,
+  25
+ ]
+}
