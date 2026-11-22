@@ -22,6 +22,7 @@ Continúa con el primer punto de «Pendiente» sin volver a preguntar lo ya deci
 | El ferry que llega antes (Ayamonte → Portugal, una hora menos) | Acertijo original, Natural | Entregado sin «CASO Nº». Escenas: `escenas/ferry.js`. |
 | El testigo y la luna llena (a medianoche la luna llena está arriba) | Acertijo original, Natural | Entregado. Escenas: `escenas/luna.js`, proyecto: `proyectos/luna.json`. |
 | ¿Quién miente? · Los girasoles (los adultos miran al este: la foto es del amanecer) | Serie «¿Quién miente?» cap. 1, Natural | Hecho con `hacer_video.py` (22/11). Escenas: `escenas/girasoles.js`. |
+| ¿Quién miente? · El trueno (3 s por km: a 3 km el trueno llega 9 s tarde) | Serie «¿Quién miente?» cap. 2, Natural | Hecho (22/11). Publicar el martes 24/11. Escenas: `escenas/trueno.js`. |
 
 ## Pendiente (en este orden)
 1. **El baile de Estrasburgo (1518)**: historia/misterio, paleta Discreta, 35–45 s. Guion ya verificado (abajo). Falta generar la voz, crear `escenas/estrasburgo.js` y montar.
