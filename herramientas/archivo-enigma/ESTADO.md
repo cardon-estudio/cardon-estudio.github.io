@@ -44,3 +44,10 @@ Caso cerrado... o casi. Y si esa mujer saliera a tu calle... ¿te unirías? Síg
 - El ladrón de calcetines: el gato del muro solo alcanza la punta del tendedero.
 - El hombre sin sombra: Mitad del Mundo (Ecuador), mediodía del equinoccio.
 - Las islas del ayer y del mañana: Diómedes (Rusia/EE. UU.), 3,8 km y 21 h de diferencia (20 en verano). Ojo: como curiosidad circula bastante.
+
+## Análisis del nicho (22/11/2026) · lo que funciona
+- Referentes 2D (suscriptores aprox., trackers públicos): Bright Side 44,5 M (acertijos y datos; su versión en español GENIAL 32 M), Kurzgesagt 25,7 M (ciencia), Infographics Show 15,5–16 M (historias y «qué pasaría si»), OverSimplified 9,6 M (historia con humor), TED-Ed Riddles (acertijo más visto: el de los sombreros de los prisioneros). En español: CuriosaMente 4,6 M, La Cuna de Halicarnaso ~500 k, Memorias de Pez ~478 k. Zack D. Films (29 M) hace datos en Shorts, pero no es 2D.
+- Hueco: en español casi no hay canales 2D de misterio + acertijos con cierre claro; GENIAL tira de «clickbait» y hay espacio para algo más cuidado y verificado.
+- Funciona: los ángulos de «misterio sin resolver» (más clics que la historia contada sin más), los acertijos de lógica con detective y una sola solución, las series con formato fijo reconocible y el humor ligero (OverSimplified).
+- Evitar: acertijos que ya circulan, cifras sin fuente (lo que critican a Bright Side) y vídeos sin cierre.
+- Idea elegida: serie fija «¿Quién miente?» (detective + dato real), siguiendo la del testigo y la luna llena.
