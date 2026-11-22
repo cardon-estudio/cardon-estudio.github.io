@@ -3,7 +3,7 @@
 Canal en español de vídeos animados 2D (historia, misterio, acertijos, curiosidades, noticias). Lema: «Lo que la historia no te contó.» El prompt completo y vigente está en `prompt-canal.md`: síguelo siempre. Cómo producir: `LEEME.md`.
 
 
-## Pendiente urgente (22/11/2026): sin créditos de ElevenLabs
+## (Resuelto 22/11/2026) Casos reales Van Meegeren y Torre Eiffel: HECHOS con la cuenta nueva de ElevenLabs (plan gratuito, 10.000 créditos/mes; quedan ~8.100). Se conserva abajo la información por referencia.
 La cuenta se quedó con 352 créditos (cada voz de ~60 s gasta unos 820-960). Cuando se renueven o se amplíe el plan, generar estas voces (guiones abajo) y montar con `hacer_video.py`. Las escenas YA están hechas.
 El dueño pidió **acertijos basados en casos reales** (con la respuesta real al final). Prioridad:
 1. **Van Meegeren · El falso Vermeer** → `escenas/vermeer.js`. Guion: «Mil novecientos cuarenta y cinco. Un pintor se enfrenta a una acusación gravísima... y se salva confesando otro delito. ¿Cuál? / Un acertijo real. / Han van Meegeren, pintor holandés, es detenido. Le acusan de vender a los nazis un tesoro nacional: un cuadro de Vermeer. Acabó en la colección de Hermann Göring. / Para la justicia, eso es colaborar con el enemigo. / Pero él responde con una frase que deja a todos helados. / Tienes diez segundos. ¿Qué dijo? / Tiempo. Dijo: "Ese Vermeer... lo pinté yo." / Nadie le creyó. Así que, delante de testigos del tribunal, pintó un "Vermeer" nuevo. / Y aquí viene lo mejor: [whispers] no le había vendido un tesoro a Göring. Le había colado una falsificación. / Esto es lo que hoy sabemos: le condenaron por falsificación, no por colaborar con el enemigo. Y en Holanda le llamaron "el hombre que engañó a Göring". / Caso cerrado. ¿Lo habías adivinado? Cuéntamelo en comentarios. Síguenos para el próximo expediente.» Fuentes: Britannica, Wikipedia (Han van Meegeren). Anclas previstas (11 escenas): gancho, título, detención, caja Göring, tribunal, pregunta, [cuenta atrás tras «¿Qué dijo?»], pinta delante de testigos, falsificación, periódico, cierre.
@@ -32,6 +32,8 @@ Continúa con el primer punto de «Pendiente» sin volver a preguntar lo ya deci
 | El testigo y la luna llena (a medianoche la luna llena está arriba) | Acertijo original, Natural | Entregado. Escenas: `escenas/luna.js`, proyecto: `proyectos/luna.json`. |
 | ¿Quién miente? · Los girasoles (los adultos miran al este: la foto es del amanecer) | Serie «¿Quién miente?» cap. 1, Natural | Hecho con `hacer_video.py` (22/11). Escenas: `escenas/girasoles.js`. |
 | ¿Quién miente? · El trueno (3 s por km: a 3 km el trueno llega 9 s tarde) | Serie «¿Quién miente?» cap. 2, Natural | Hecho (22/11). Publicar el martes 24/11. Escenas: `escenas/trueno.js`. |
+| Caso real · El falso Vermeer (Van Meegeren, 1945) | «Un acertijo real», Natural | Hecho (22/11). `escenas/vermeer.js`, `proyectos/vermeer.json`. |
+| Caso real · La Torre Eiffel vendida dos veces (Lustig, 1925) | «Un acertijo real», Natural | Hecho (22/11). `escenas/eiffel.js`, `proyectos/eiffel.json`. |
 
 ## Pendiente (en este orden)
 1. **El baile de Estrasburgo (1518)**: historia/misterio, paleta Discreta, 35–45 s. Guion ya verificado (abajo). Falta generar la voz, crear `escenas/estrasburgo.js` y montar.
@@ -62,3 +64,6 @@ Caso cerrado... o casi. Y si esa mujer saliera a tu calle... ¿te unirías? Síg
 - Funciona: los ángulos de «misterio sin resolver» (más clics que la historia contada sin más), los acertijos de lógica con detective y una sola solución, las series con formato fijo reconocible y el humor ligero (OverSimplified).
 - Evitar: acertijos que ya circulan, cifras sin fuente (lo que critican a Bright Side) y vídeos sin cierre.
 - Idea elegida: serie fija «¿Quién miente?» (detective + dato real), siguiendo la del testigo y la luna llena.
+
+## Cuenta de ElevenLabs
+- Desde el 22/11/2026 se usa otra cuenta (plan gratuito). En el plan gratuito, ElevenLabs no permite uso comercial y pide atribución: si el canal empieza a monetizar, pasar a un plan de pago.

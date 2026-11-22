@@ -92,7 +92,7 @@ function scQuestion(lt,d){const cam=camAt([[0,540,860,1.0],[d,540,880,1.15]],lt)
 function scCountdown(lt,d){let s=`<rect width="1080" height="1920" fill="#6B5A48"/>`+woodRect(0,0,1080,1920);
   const tg=(x,y,r,txt)=>`<g transform="${tr(x,y,1,r)}" filter="url(#soft)"><rect x="-210" y="-120" width="420" height="240" fill="#F2E6CC" ${OO}/><rect x="-210" y="-120" width="420" height="56" fill="#E3B23C"/><text y="-80" font-family="Inter" font-weight="900" font-size="26" fill="${N.ink}" text-anchor="middle">TÉLÉGRAMME</text><text y="40" font-family="Playfair Display" font-weight="900" font-size="46" fill="${N.ink}" text-anchor="middle">${txt}</text></g>`;
   s+=tg(310,520,-6,'«CONFIDENCIAL»')+tg(770,640,5,'POISSON PAGÓ')+tg(380,1100,4,'NO LO DENUNCIÓ');
-  s+=`<g transform="translate(820,1180) rotate(${Math.sin(lt*2)*6})" filter="url(#soft)"><circle r="120" fill="none" stroke="#5A4636" stroke-width="22"/><circle r="120" fill="#CFE6F2" opacity=".35"/><rect x="90" y="80" width="34" height="180" rx="12" transform="rotate(-45,90,80)" fill="#5A4636" ${OO}/></g>`;return s}
+  return s}
 function scBribe(lt,d){let s=`<rect width="1080" height="1920" fill="#6B2E2E"/>`+woodRect(0,1000,1080,920);
   s+=`<g filter="url(#soft)"><rect x="80" y="1000" width="920" height="40" fill="#5A3E2B" ${OO}/></g>`;
   const word=pop(lt,0,.4);s+=`<g transform="${tr(540,560,word,-3)}" filter="url(#soft)"><rect x="-330" y="-80" width="660" height="150" rx="14" fill="#F2E6CC" ${OO}/><text y="30" font-family="Playfair Display" font-weight="900" font-size="84" fill="#C8312B" text-anchor="middle">CONFIDENCIAL</text></g>`;

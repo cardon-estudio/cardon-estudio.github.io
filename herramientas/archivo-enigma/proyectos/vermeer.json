@@ -1,0 +1,61 @@
+{
+ "nombre": "vermeer",
+ "voz": "https://elevenlabsusercontent.com/database/workspace/1b047664c9914e53a493aab8c5a8c5e5/content_generation/CNnQJi5IEMTGG3ojxld9/WKKBnG1ofZXu2WBejXLh/content.mp3?Expires=1795356000&KeyName=assets-cdn-key-1&Signature=w2cNe3gORb-0fUkkiHTpsRl7cQ4=",
+ "velocidad": 1.15,
+ "pausa": 0.14,
+ "escenas": "escenas/vermeer.js",
+ "frases": [
+  "Mil novecientos cuarenta y cinco.",
+  "Un pintor se enfrenta a una acusación *gravísima...",
+  "y se salva confesando *otro delito.",
+  "¿*Cuál?",
+  "Un acertijo *real.",
+  "Han van Meegeren, pintor holandés, es *detenido.",
+  "Le acusan de vender a los nazis un *tesoro nacional:",
+  "un cuadro de *Vermeer.",
+  "Acabó en la colección de *Hermann Göring.",
+  "Para la justicia, eso es *colaborar con el enemigo.",
+  "Pero él responde con una frase que deja a todos *helados.",
+  "Tienes diez *segundos.",
+  "¿Qué *dijo?",
+  "*Tiempo.",
+  "Dijo: «Ese Vermeer...",
+  "lo pinté *yo.»",
+  "Nadie le *creyó.",
+  "Así que, delante de testigos del tribunal, pintó un «Vermeer» *nuevo.",
+  "Y aquí viene lo mejor:",
+  "no le había vendido un tesoro a Göring.",
+  "Le había colado una *falsificación.",
+  "Esto es lo que hoy sabemos:",
+  "le condenaron por *falsificación, no por colaborar con el enemigo.",
+  "Y en Holanda le llamaron «el hombre que *engañó a Göring».",
+  "Caso *cerrado.",
+  "¿Lo habías *adivinado?",
+  "Cuéntamelo en *comentarios.",
+  "Síguenos para el próximo *expediente."
+ ],
+ "anclas": [
+  1,
+  4,
+  5,
+  6,
+  9,
+  11,
+  13,
+  18,
+  21,
+  24
+ ],
+ "cuenta_atras_tras": 12,
+ "quitar": [
+  0,
+  16,
+  25
+ ],
+ "golpes": [
+  15,
+  17,
+  20,
+  23
+ ]
+}

@@ -85,7 +85,6 @@ function scCountdown(lt,d){let s=`<rect width="1080" height="1920" fill="#3A3226
   s+=sk(300,520,-6,'UN «VERMEER»','<rect x="-90" y="-120" width="180" height="200"/><circle cx="0" cy="-40" r="30"/><path d="M-50,80 Q0,0 50,80"/>');
   s+=sk(780,620,5,'VENDIDO A GÖRING','<rect x="-130" y="-110" width="260" height="170"/><line x1="-130" y1="-60" x2="130" y2="-60"/><line x1="-130" y1="0" x2="130" y2="0"/>');
   s+=sk(400,1100,4,'¿QUÉ CONFESÓ?','<text x="0" y="40" font-size="180" text-anchor="middle" stroke="#C8312B" font-family="Playfair Display">?</text>');
-  s+=`<g transform="translate(${830+Math.sin(lt)*20},1230) rotate(-20)" filter="url(#soft)"><ellipse rx="150" ry="100" fill="#C9A66B" ${OO}/><circle cx="60" cy="-30" r="24" fill="#2A1E17"/>${[['-70','-30',V.blue],['-20','-60',V.yel],['30','30','#C8312B'],['-60','40','#F2E6CC']].map(([a,b,c])=>`<circle cx="${a}" cy="${b}" r="22" fill="${c}" ${OO}/>`).join('')}</g>`;
   return s}
 function scPaint(lt,d){const cam=camAt([[0,540,900,1.05],[d,560,880,1.2]],lt);
   let w=`<rect x="-400" y="-400" width="1900" height="2600" fill="#D8C6A2"/>`+woodRect(-400,1300,1900,900)+`<rect x="-200" y="-200" width="500" height="900" fill="#CFE0EA" opacity=".35"/>`;
