@@ -20,6 +20,11 @@ Web de la agencia Cardón Estudio (diseño web para negocios locales de Canarias
 - Diseñar pensando primero en el móvil (390 px). Botones de al menos 44 px. Contraste legible.
 - No publicar, subir ni enviar nada a clientes sin la aprobación del dueño.
 
+## Canal Archivo Enigma (vídeos 2D con IA)
+- Todo en `herramientas/archivo-enigma/`, aparte de la web: no mezclarlo con ella.
+- Si el dueño escribe «sigue» o pide un vídeo: lee `herramientas/archivo-enigma/ESTADO.md` (decisiones, hecho y pendiente), luego `LEEME.md` (cómo producir gastando pocos tokens) y sigue `prompt-canal.md`. Continúa con lo pendiente sin volver a preguntar lo ya decidido.
+- Al terminar cada vídeo, actualiza `ESTADO.md` y haz commit.
+
 ## Pendiente
 - Páginas de Aviso legal y Privacidad (obligatorias en España).
 - Pasar las plantillas al mismo sistema de CSS por archivos.
