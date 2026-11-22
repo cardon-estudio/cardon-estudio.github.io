@@ -84,6 +84,7 @@ def main():
         sys.exit("Ajusta 'frases' (une o separa) para que coincidan con los tramos.")
 
     # 2 · pista limpia con huecos fijos (y cuenta atrás)
+    GAPC = cfg.get("pausa", GAP)
     quitar = set(cfg.get("quitar", []))
     cd_tras = cfg.get("cuenta_atras_tras")      # índice de frase o null
     partes, t, tiempos = [], INICIO, {}
@@ -97,14 +98,14 @@ def main():
         partes.append(f"[s{n}]"); n += 1
         tiempos[i] = (t, t + (b0 - a0))
         t += b0 - a0
-        pausa = GAP
+        pausa = GAPC
         if cd_tras is not None and i == cd_tras:
             cd = (t + 0.15, t + 0.15 + CUENTA)
             pausa = CUENTA + 0.3
         filt.append(f"anullsrc=r={SR}:cl=mono,atrim=0:{pausa:.3f}[g{n}]")
         partes.append(f"[g{n}]")
         t += pausa
-    T = round(t - GAP + COLA, 2)
+    T = round(t - GAPC + COLA, 2)
     voz = os.path.join(tmp, "voz_full.wav")
     fc = ";".join(filt) + ";" + "".join(partes) + f"concat=n={len(partes)}:v=0:a=1,adelay={int(INICIO*1000)}:all=1[o]"
     sh(f"ffmpeg -hide_banner -loglevel error -y -i '{vf}' -filter_complex \"{fc}\" -map \"[o]\" '{voz}'")
