@@ -17,6 +17,10 @@ Instrucciones para Claude. Sigue este orden y no repitas a mano lo que ya hace e
 7. Si la hoja está bien: `python3 hacer_video.py proyectos/<nombre>.json` → `salida/<nombre>-9x16.mp4`.
 8. Miniatura (1280×720, sin destripar la solución) y textos de publicación.
 
+## Variedad (decisión del dueño, 22/11/2026)
+- **Ningún vídeo repite escenas.** Cada capítulo diseña desde cero, ambientado en su tema: el título, la pregunta, la cuenta atrás (las pistas), el primer plano o la pista de la inspectora y el final. Ejemplo: `escenas/trueno.js` (cristal empañado, libreta, parte del seguro, notas adhesivas, sello «RECHAZADO»). Prohibido reutilizar la mesa de madera con polaroids o el papel «UN ACERTIJO AL DÍA» de otros capítulos.
+- Lo único fijo: la tira de arriba, el logo, los subtítulos, el círculo de la cuenta atrás y la voz.
+
 ## Reglas para gastar poco
 - Una sola hoja de prueba antes del render; nada de capturas sueltas.
 - No leer archivos enteros del motor: solo el de escenas que se edita.

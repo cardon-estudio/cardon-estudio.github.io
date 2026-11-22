@@ -135,3 +135,45 @@ function build(){
     let cur=[];ws.forEach((w,i)=>{cur.push(w);if(/[.,?:…»]$/.test(w.t)||cur.length==3||i==ws.length-1){CH.push(cur);cur=[]}})});
   CH.forEach((c,i)=>{c.start=c[0].s;c.end=i+1<CH.length?Math.min(CH[i+1][0].s,c[c.length-1].s+1.4):T})}
 let CH=[];build();
+
+/* ===== escenas propias de este capítulo (sustituyen a las genéricas) ===== */
+function wetWindow(t,inner){let s=storm('ww',t)+inner+`<rect x="-10" y="-10" width="1100" height="1940" fill="#B8C6DD" opacity=".18"/>`;
+  for(let i=0;i<45;i++){const x=rnd(i)*1080,y=(rnd(i+4)*1920+t*(40+rnd(i+2)*120))%1920,r=6+rnd(i+6)*10;s+=`<ellipse cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" rx="${(r*.7).toFixed(1)}" ry="${r.toFixed(1)}" fill="#DCE6F5" opacity=".55" stroke="#FFFFFF" stroke-width="1.5"/><line x1="${x.toFixed(0)}" y1="${(y-r*4).toFixed(0)}" x2="${x.toFixed(0)}" y2="${(y-r).toFixed(0)}" stroke="#DCE6F5" stroke-width="2" opacity=".4"/>`}
+  s+=`<rect x="0" y="0" width="1080" height="1920" fill="none" stroke="#3A2A22" stroke-width="70"/><line x1="540" y1="0" x2="540" y2="1920" stroke="#3A2A22" stroke-width="36"/><line x1="0" y1="960" x2="1080" y2="960" stroke="#3A2A22" stroke-width="36"/>`;return s}
+function scTitle(lt,d){ // título escrito con el dedo en el cristal empañado
+  const fl=flick(lt+1.1);let inner=`<rect x="-500" y="1150" width="2100" height="900" fill="${S3.field}"/>`+barn(820,1150,.45,lt)+(fl?bolt(300,200,1.1):'');
+  let s=wetWindow(lt,inner);const k=pr(lt,0,d*.8);
+  s+=`<g opacity=".95"><text x="540" y="760" font-family="Playfair Display" font-weight="900" font-size="150" fill="none" stroke="#F4F8FF" stroke-width="10" text-anchor="middle" stroke-dasharray="${(2200*k).toFixed(0)} 4000">¿QUIÉN</text><text x="540" y="930" font-family="Playfair Display" font-weight="900" font-size="150" fill="none" stroke="#F4F8FF" stroke-width="10" text-anchor="middle" stroke-dasharray="${(2200*Math.max(0,k*2-1)).toFixed(0)} 4000">MIENTE?</text></g>`;
+  return s}
+function scNote(lt,d){ // la libreta de la inspectora, se escribe sola
+  let s=`<rect width="1080" height="1920" fill="#3A2E28"/>`+woodRect(0,0,1080,1920);
+  s+=`<g transform="translate(540,880) rotate(-4)" filter="url(#soft)"><rect x="-360" y="-460" width="720" height="920" rx="16" fill="#FBF6EA" ${OO}/>${[...Array(14)].map((_,i)=>`<line x1="-320" y1="${-360+i*60}" x2="320" y2="${-360+i*60}" stroke="#9CC3E0" stroke-width="3"/>`).join('')}<line x1="-260" y1="-460" x2="-260" y2="460" stroke="#E59AA8" stroke-width="4"/>`;
+  const lines=['Tomás: casa a 3 km','Vio el rayo...','...y oyó el trueno','¿A LA VEZ?'];
+  lines.forEach((l,i)=>{const p=pr(lt,.2+i*.55,.7+i*.55);const n=Math.floor(l.length*p);if(n>0)s+=`<text x="-230" y="${-280+i*120}" font-family="Playfair Display" font-weight="800" font-style="italic" font-size="${i==3?78:56}" fill="${i==3?'#C8312B':N.ink}">${l.slice(0,n)}</text>`});
+  const c=pr(lt,2.6,3.2);if(c>0)s+=`<ellipse cx="-40" cy="80" rx="${280*c}" ry="${80*c}" fill="none" stroke="#C8312B" stroke-width="8"/>`;
+  s+=`</g>`;const pen=Math.min(3,Math.floor(lt/.55));
+  s+=`<g transform="translate(${700+((lt*300)%200)},${640+pen*120}) rotate(35)" filter="url(#soft)"><rect x="-14" y="-200" width="28" height="200" rx="8" fill="#2F5D8C" ${OO}/><polygon points="-14,0 14,0 0,36" fill="#C9A66B" ${OO}/></g>`;
+  return s}
+function scQuestion(lt,d){ // parte del seguro con la causa en duda
+  let s=`<rect width="1080" height="1920" fill="#2C3656"/>`+rain(lt,30);const p=eob(cl(lt/.6));
+  s+=`<g transform="translate(540,800) rotate(3) scale(${(.92+.08*p).toFixed(3)})" filter="url(#soft)"><rect x="-380" y="-470" width="760" height="940" fill="#FBF6EA" ${OO}/><rect x="-380" y="-470" width="760" height="120" fill="#2F7A3A"/><text y="-390" font-family="Playfair Display" font-weight="900" font-size="54" fill="#FBF6EA" text-anchor="middle">PARTE DE SINIESTRO</text>
+  <text x="-330" y="-260" font-family="Inter" font-weight="800" font-size="32" fill="${N.ink}">Asegurado: Tomás</text><text x="-330" y="-190" font-family="Inter" font-weight="800" font-size="32" fill="${N.ink}">Importe: 100.000 €</text><text x="-330" y="-90" font-family="Inter" font-weight="900" font-size="44" fill="${N.ink}">Causa: RAYO</text>
+  <text y="200" font-family="Playfair Display" font-weight="900" font-size="300" fill="#C8312B" text-anchor="middle" opacity="${pr(lt,.3,.6)}">?</text><ellipse cx="-160" cy="-104" rx="${190*pr(lt,.5,.9)}" ry="44" fill="none" stroke="#C8312B" stroke-width="7"/></g>`;
+  return s}
+function scCountdown(lt,d){ // el cielo cuenta: rayo cada pocos segundos y la cuenta en la ventana
+  const fl=flick(lt*1.3);let inner=`<rect x="-500" y="1150" width="2100" height="900" fill="${S3.field}"/>`+barn(800,1150,.5,lt)+`<g transform="translate(240,1150)"><rect x="-90" y="-140" width="180" height="140" fill="#E8DCC4" ${OO}/><rect x="-35" y="-110" width="70" height="56" fill="#F7D58B" ${OO}/></g>`+(fl?bolt(780,250,1.3):'');
+  let s=wetWindow(lt,inner);
+  const note=(x,y,r,txt,col)=>`<g transform="${tr(x,y,1,r)}" filter="url(#soft)"><rect x="-130" y="-90" width="260" height="180" fill="${col}" ${OO}/><text y="20" font-family="Playfair Display" font-weight="900" font-size="54" fill="${N.ink}" text-anchor="middle">${txt}</text></g>`;
+  s+=note(260,470,-6,'3 KM','#F7E27A')+note(800,520,5,'RAYO','#A8E0D2')+note(300,1240,4,'¿A LA VEZ?','#F5B7C5').replace('font-size="54"','font-size="44"');
+  return s}
+function scClose(lt,d){ // amanece: el parte, sellado
+  const cam=camAt([[0,540,900,1.05],[d,540,880,1.0]],lt);
+  let w=`<defs><linearGradient id="dw2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9BB7E0"/><stop offset="1" stop-color="#F6C99A"/></linearGradient></defs><rect x="-400" y="-400" width="1900" height="2600" fill="url(#dw2)"/><rect x="-400" y="1300" width="1900" height="900" fill="#55702C"/>`;
+  w+=`<g transform="translate(560,1300) scale(.8)"><rect x="-220" y="-200" width="440" height="200" fill="#3A2A22" ${OO}/></g>`;
+  for(let i=0;i<5;i++){const k=((lt*.25+i/5)%1);w+=`<circle cx="${520+i*30+Math.sin(lt+i)*20}" cy="${1120-k*500}" r="${30+k*60}" fill="#8A8A8A" opacity="${(.4*(1-k)).toFixed(2)}"/>`}
+  w+=inspectora({x:240,y:1330,s:1.2,pose:'point',t:lt,face:'smile',look:1});
+  let s=CAM(cam,w);
+  const p=pop(lt,.1,.5);s+=`<g transform="${tr(700,760,p*.62,6)}" filter="url(#soft)"><rect x="-380" y="-470" width="760" height="940" fill="#FBF6EA" ${OO}/><rect x="-380" y="-470" width="760" height="120" fill="#2F7A3A"/><text y="-390" font-family="Playfair Display" font-weight="900" font-size="54" fill="#FBF6EA" text-anchor="middle">PARTE DE SINIESTRO</text><text x="-330" y="-90" font-family="Inter" font-weight="900" font-size="44" fill="${N.ink}">Causa: <tspan text-decoration="line-through">RAYO</tspan></text></g>`;
+  const sp=pr(lt,.6,1.1);if(sp>0)s+=`<g transform="translate(700,820) rotate(-12) scale(${(1.3-.3*eoc(sp)).toFixed(3)})" opacity="${(eoc(sp)*.92).toFixed(2)}"><rect x="-270" y="-75" width="540" height="150" rx="14" fill="none" stroke="#9B2F27" stroke-width="12"/><text y="30" font-family="Playfair Display" font-weight="900" font-size="84" fill="#9B2F27" text-anchor="middle">RECHAZADO</text></g>`;
+  const lg=pr(lt,d-3.0,d-2.3);if(lg>0)s+=`<g opacity="${lg}">${logoSm(540,1180,1.2)}</g>`;
+  return s}
