@@ -38,8 +38,11 @@ Continúa con el primer punto de «Pendiente» sin volver a preguntar lo ya deci
 | Caso real · La Copa del Mundo y el perro Pickles (1966) | «Un acertijo real», Natural | Hecho (25/11) con boceto previo. `escenas/copa.js`. |
 | Caso real · Hans el Listo, el caballo que «sumaba» (1904) | «Un acertijo real», Natural | Hecho (25/11) con boceto previo. `escenas/hans.js`. |
 | Hans el Listo **rehecho con motor 2** | Igual | Hecho (25/11): `guiones/hans.json`, `proyectos/hans2.json` → `salida/hans2-9x16.mp4`. Pasa el QC. Comparativa: `trabajo/cmp/comparativa.jpg`. |
+| Caso real · La fuga de Alcatraz (1962) | «Un acertijo real», motor 2 | Hecho (25/11): `guiones/alcatraz.json`, `proyectos/alcatraz.json`. Pasa el QC. |
+| Caso real · Operación Mincemeat (1943) | «Un acertijo real», motor 2 | Hecho (25/11): `guiones/mincemeat.json`, `proyectos/mincemeat.json`. Pasa el QC. |
 
 ## Pendiente (en este orden)
+0b. **Tres vídeos listos para poner voz** (guion gráfico y boceto revisados): `turco` (El Turco, 1770: 813 caracteres), `hadas` (Cottingley, 1917: 749) y `niza` (robo de Niza, 1976: 798). Solo falta la voz: los créditos de ElevenLabs se acabaron el 25/11 (quedaban ~387) y se renuevan el 22/12/2026, o el dueño conecta otra cuenta. Tras la voz: `--solo-prueba`, ajustar `frases` a los tramos que imprime (unir/separar), y render.
 0. Todo vídeo nuevo se hace con **motor 2** (ver LEEME.md). Mejoras posibles: más escenarios y animales en la biblioteca; el primer plano del caballo es algo tosco.
 1. **El baile de Estrasburgo (1518)**: historia/misterio, paleta Discreta, 35–45 s. Guion ya verificado (abajo). Falta generar la voz, crear `escenas/estrasburgo.js` y montar.
 2. Opcional: rehacer Diátlov con cierre «Esto es lo que hoy sabemos» (alud de placa, Gaume y Puzrin 2021) y sin «CASO Nº».
