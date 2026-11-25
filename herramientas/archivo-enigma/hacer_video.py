@@ -142,8 +142,15 @@ def main():
           f"window.CD_OVERRIDE={json.dumps(cdj)};window.T_OVERRIDE={T};")
     head = open(os.path.join(AQUI, "motor/head.html")).read()
     head = head.replace("<script>\n/* ===== Paleta", "<script>" + js + "\n</script>\n<script>\n/* ===== Paleta", 1)
-    html = head + open(os.path.join(AQUI, "motor/comun.js")).read() + \
-        open(os.path.join(AQUI, cfg["escenas"])).read() + open(os.path.join(AQUI, "motor/tail.js")).read()
+    if cfg.get("guion"):   # motor 2: guion gráfico declarativo + bibliotecas reutilizables
+        lib = lambda n: open(os.path.join(AQUI, "motor2/lib", n)).read()
+        story = open(os.path.join(AQUI, cfg["guion"])).read()
+        head = head.replace("</style>", "#cap span.k{color:#FFD23F}#cap span.on{color:#FFD23F;text-shadow:0 0 18px rgba(255,210,63,.45)}</style>", 1)
+        html = head + open(os.path.join(AQUI, "motor/comun.js")).read() + f"\nconst CASE_LABEL={json.dumps(cfg.get('rotulo', ''), ensure_ascii=False)};\nwindow.STORY={story};\n" + \
+            "".join(lib(n) for n in ("personajes.js", "animales.js", "escenarios.js", "objetos.js", "director.js")) + lib("tail2.js")
+    else:
+        html = head + open(os.path.join(AQUI, "motor/comun.js")).read() + \
+            open(os.path.join(AQUI, cfg["escenas"])).read() + open(os.path.join(AQUI, "motor/tail.js")).read()
     page = os.path.join(tmp, "video.html")
     open(page, "w").write(html)
 
@@ -157,6 +164,7 @@ def main():
     # 4 · música, efectos y master
     sfx = {"duration": T, "hits": [tiempos[i][0] for i in cfg.get("golpes", []) if i in tiempos],
            "whooshes": [p[0] for p in ph[1:]] + ([cd[0]] if cd else [])}
+    sfx["eventos"] = [[round(tiempos[i][0] + off, 3), tipo] for i, tipo, off in cfg.get("sonidos", []) if i in tiempos]
     if cd:
         sfx["cdticks"] = [cd[0] + k for k in range(int(CUENTA))]
         sfx["bell"] = cd[1]
@@ -191,6 +199,7 @@ def main():
        f"-pix_fmt yuv420p -profile:v high -c:a aac -b:a 192k -ar {SR} -movflags +faststart -shortest '{out}'")
     sh(f"rm -rf '{frames}'")
     print(f"Vídeo: {out}")
+    subprocess.run([sys.executable, os.path.join(AQUI, "motor/qc.py"), out])
 
 
 if __name__ == "__main__":

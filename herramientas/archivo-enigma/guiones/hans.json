@@ -1,0 +1,1479 @@
+{
+ "personajes": {
+  "hans": {
+   "tipo": "caballo",
+   "color": "#8A5A3A",
+   "crin": "#2E2218",
+   "mancha": true
+  },
+  "osten": {
+   "piel": "#EBC6A2",
+   "pelo": "#E8E4DC",
+   "peinado": "calvo",
+   "barba": "barba",
+   "colorBarba": "#EDEAE4",
+   "sombrero": "bombin",
+   "edad": "mayor",
+   "ropa": {
+    "tipo": "levita",
+    "color": "#3A3A48",
+    "pantalon": "#2B2A30",
+    "camisa": "#F2EEE6",
+    "corbata": "#7A2E2E"
+   }
+  },
+  "pfungst": {
+   "piel": "#E2B48C",
+   "pelo": "#5A3A22",
+   "peinado": "corto",
+   "barba": "bigote",
+   "gafas": "redondas",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#6E5A46",
+    "pantalon": "#3B342C",
+    "camisa": "#F2EEE6",
+    "corbata": "#2F4A6B"
+   }
+  },
+  "experto1": {
+   "piel": "#DDB08A",
+   "pelo": "#8A8A8A",
+   "peinado": "calvo",
+   "barba": "barba",
+   "colorBarba": "#9a9a9a",
+   "gafas": "redondas",
+   "edad": "mayor",
+   "ropa": {
+    "tipo": "levita",
+    "color": "#2F3B5C",
+    "pantalon": "#22283A",
+    "camisa": "#F2EEE6",
+    "corbata": "#2E2218"
+   }
+  },
+  "experto2": {
+   "piel": "#E8C29C",
+   "pelo": "#2E2218",
+   "peinado": "corto",
+   "barba": "bigote",
+   "sombrero": "chistera",
+   "ropa": {
+    "tipo": "levita",
+    "color": "#4A3B2E",
+    "pantalon": "#2E2B28",
+    "camisa": "#F2EEE6",
+    "corbata": "#7A5C3E"
+   }
+  },
+  "experto3": {
+   "piel": "#F0CDAA",
+   "pelo": "#C9A66B",
+   "peinado": "corto",
+   "barba": "perilla",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#4E5B3E",
+    "pantalon": "#2E2B28",
+    "camisa": "#F2EEE6",
+    "corbata": "#6B2E2E"
+   }
+  },
+  "cientifica": {
+   "piel": "#C98F67",
+   "pelo": "#2E2218",
+   "peinado": "mono",
+   "gafas": "redondas",
+   "ropa": {
+    "tipo": "bata",
+    "color": "#F4F4F0",
+    "pantalon": "#3B3F4C",
+    "camisa": "#9CC3E0",
+    "botones": "#9AA6AE",
+    "mangas": "#F4F4F0"
+   }
+  },
+  "cientifico": {
+   "piel": "#E8C29C",
+   "pelo": "#5A3A22",
+   "peinado": "corto",
+   "barba": "barba",
+   "colorBarba": "#5A3A22",
+   "ropa": {
+    "tipo": "bata",
+    "color": "#F4F4F0",
+    "pantalon": "#2E3A4F",
+    "camisa": "#F2EEE6",
+    "botones": "#9AA6AE",
+    "mangas": "#F4F4F0"
+   }
+  }
+ },
+ "escenas": [
+  {
+   "tira": "BERLÍN, 1904",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "camara": [
+    [
+     0,
+     830,
+     1210,
+     2.7
+    ],
+    [
+     0.55,
+     760,
+     1080,
+     1.7
+    ],
+    [
+     1,
+     600,
+     900,
+     1.1
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 640,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "golpear",
+       {
+        "vel": 2.6
+       }
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pizarra",
+     "x": 180,
+     "y": 1060,
+     "s": 0.55,
+     "texto": "3 + 2"
+    },
+    {
+     "tipo": "publico",
+     "x0": 1000,
+     "x1": 1500,
+     "y": 1320,
+     "n": 4,
+     "s": 0.55,
+     "mira": -1
+    },
+    {
+     "tipo": "contador",
+     "x": 880,
+     "y": 560,
+     "hasta": 5,
+     "en": 0.05,
+     "fin": 0.95,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "rayos",
+    "polvo",
+    "calida"
+   ]
+  },
+  {
+   "tira": "SIN TRUCOS",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "camara": [
+    [
+     0,
+     1180,
+     1020,
+     1.3
+    ],
+    [
+     1,
+     1140,
+     1010,
+     1.38
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 560,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "asentir"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "publico",
+     "x0": 820,
+     "x1": 1700,
+     "y": 1300,
+     "n": 5,
+     "s": 0.66,
+     "mira": -1,
+     "reaccion": [
+      0.1,
+      "aplaudir"
+     ],
+     "semilla": 4
+    }
+   ],
+   "efectos": [
+    "polvo",
+    "calida"
+   ]
+  },
+  {
+   "tira": "¿CÓMO LO HACÍA?",
+   "escenario": "berlin_patio",
+   "entrada": "zoom",
+   "plano": {
+    "tipo": "primer_plano",
+    "de": "hans",
+    "dx": 170,
+    "dy": 180,
+    "empuje": 0.1
+   },
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 560,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "mirar"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "¿CÓMO?",
+     "x": 540,
+     "y": 520,
+     "en": 0.25,
+     "tam": 90,
+     "color": "#9B2F27",
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ]
+  },
+  {
+   "tira": "UN ACERTIJO REAL",
+   "escenario": "cartel",
+   "entrada": "barrido",
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     0.95
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 540,
+     "y": 860,
+     "s": 1.25,
+     "texto": "¡ASOMBROSO!",
+     "sub": "UN ACERTIJO REAL"
+    }
+   ],
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 560,
+     "y": 980,
+     "escala": 0.42,
+     "acts": [
+      [
+       0,
+       "golpear"
+      ]
+     ],
+     "polvo": false
+    }
+   ]
+  },
+  {
+   "tira": "HANS EL LISTO",
+   "escenario": "berlin_calle",
+   "entrada": "barrido",
+   "camara": [
+    [
+     0,
+     300,
+     880,
+     1.05
+    ],
+    [
+     1,
+     860,
+     880,
+     1.12
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "hans",
+     "y": 1330,
+     "escala": 0.72,
+     "ruta": [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       760
+      ]
+     ],
+     "acts": [
+      [
+       0,
+       "andar"
+      ]
+     ]
+    },
+    {
+     "quien": "osten",
+     "y": 1350,
+     "escala": 0.78,
+     "ruta": [
+      [
+       0,
+       330
+      ],
+      [
+       1,
+       1060
+      ]
+     ],
+     "acts": [
+      [
+       0,
+       "andar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "orgulloso"
+      ]
+     ]
+    }
+   ],
+   "efectos": [
+    "calida",
+    "polvo"
+   ]
+  },
+  {
+   "tira": "WILHELM VON OSTEN",
+   "escenario": "berlin_patio",
+   "entrada": "fundido",
+   "plano": {
+    "tipo": "medio",
+    "de": "osten",
+    "dx": 60,
+    "empuje": 0.06
+   },
+   "actores": [
+    {
+     "quien": "osten",
+     "x": 420,
+     "escala": 0.85,
+     "acts": [
+      [
+       0,
+       "hablar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "feliz"
+      ]
+     ]
+    },
+    {
+     "quien": "hans",
+     "x": 980,
+     "escala": 0.8,
+     "mira": -1,
+     "acts": [
+      [
+       0,
+       "quieto"
+      ]
+     ]
+    }
+   ],
+   "efectos": [
+    "calida"
+   ]
+  },
+  {
+   "tira": "«TRES MÁS DOS»",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "camara": [
+    [
+     0,
+     300,
+     760,
+     2.4
+    ],
+    [
+     1,
+     300,
+     760,
+     2.6
+    ]
+   ],
+   "objetos": [
+    {
+     "tipo": "pizarra",
+     "x": 300,
+     "y": 980,
+     "s": 0.9,
+     "texto": "3 + 2",
+     "dibujar": [
+      0.05,
+      0.75
+     ]
+    }
+   ],
+   "actores": [
+    {
+     "quien": "osten",
+     "x": 620,
+     "escala": 0.85,
+     "mira": -1,
+     "acts": [
+      [
+       0,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ]
+    }
+   ],
+   "efectos": [
+    "calida"
+   ]
+  },
+  {
+   "tira": "GOLPEA EL SUELO…",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "camara": [
+    [
+     0,
+     640,
+     960,
+     1.05
+    ],
+    [
+     1,
+     640,
+     940,
+     1.12
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 600,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "golpear",
+       {
+        "vel": 2.4
+       }
+      ]
+     ]
+    },
+    {
+     "quien": "osten",
+     "x": 200,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "quieto"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "publico",
+     "x0": 1050,
+     "x1": 1550,
+     "y": 1330,
+     "n": 4,
+     "s": 0.6,
+     "mira": -1,
+     "semilla": 2
+    },
+    {
+     "tipo": "contador",
+     "x": 880,
+     "y": 560,
+     "hasta": 4,
+     "en": 0.05,
+     "fin": 1,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "polvo",
+    "calida"
+   ]
+  },
+  {
+   "tira": "…CINCO VECES",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "camara": [
+    [
+     0,
+     830,
+     1210,
+     2.6
+    ],
+    [
+     1,
+     830,
+     1200,
+     2.75
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 640,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "golpear",
+       {
+        "vel": 2.4
+       }
+      ],
+      [
+       0.45,
+       "quieto"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "x": 880,
+     "y": 560,
+     "hasta": 5,
+     "en": 0,
+     "fin": 0.4,
+     "color": "#2F7A3A",
+     "hud": true
+    }
+   ],
+   "sacudida": [
+    0.42
+   ],
+   "efectos": [
+    "polvo",
+    "calida"
+   ]
+  },
+  {
+   "tira": "LA COMISIÓN DE EXPERTOS",
+   "escenario": "sala",
+   "opc": {
+    "mesa": true
+   },
+   "entrada": "barrido",
+   "camara": [
+    [
+     0,
+     540,
+     900,
+     1.02
+    ],
+    [
+     1,
+     560,
+     880,
+     1.1
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "experto1",
+     "x": 200,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "escribir"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ],
+     "prop": "libreta"
+    },
+    {
+     "quien": "experto2",
+     "x": 470,
+     "escala": 0.82,
+     "acts": [
+      [
+       0,
+       "pensar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "pensativo"
+      ]
+     ]
+    },
+    {
+     "quien": "experto3",
+     "x": 760,
+     "escala": 0.8,
+     "mira": -1,
+     "acts": [
+      [
+       0,
+       "hablar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "duda"
+      ]
+     ]
+    }
+   ],
+   "efectos": [
+    "rayos",
+    "polvo"
+   ]
+  },
+  {
+   "tira": "NO HAY TRAMPA",
+   "escenario": "sala",
+   "opc": {
+    "mesa": true
+   },
+   "entrada": "corte",
+   "camara": [
+    [
+     0,
+     520,
+     820,
+     1.25
+    ],
+    [
+     1,
+     520,
+     820,
+     1.3
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "experto2",
+     "x": 380,
+     "escala": 0.85,
+     "acts": [
+      [
+       0,
+       "negar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "duda"
+      ]
+     ]
+    },
+    {
+     "quien": "experto3",
+     "x": 700,
+     "escala": 0.82,
+     "mira": -1,
+     "acts": [
+      [
+       0,
+       "manosCintura"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "neutral"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "sello",
+     "texto": "SIN TRUCOS",
+     "x": 540,
+     "y": 520,
+     "en": 0.3,
+     "color": "#2F7A3A",
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "polvo"
+   ]
+  },
+  {
+   "tira": "OSKAR PFUNGST",
+   "escenario": "estudio",
+   "entrada": "fundido",
+   "camara": [
+    [
+     0,
+     520,
+     900,
+     1.05
+    ],
+    [
+     0.6,
+     500,
+     720,
+     1.6
+    ],
+    [
+     1,
+     500,
+     700,
+     1.75
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "pfungst",
+     "x": 460,
+     "escala": 0.85,
+     "acts": [
+      [
+       0,
+       "pensar"
+      ],
+      [
+       0.65,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "pensativo"
+      ],
+      [
+       0.6,
+       "sorpresa"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "¿Y SI…?",
+     "x": 760,
+     "y": 520,
+     "en": 0.6,
+     "tam": 70,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "fria",
+    "vineta"
+   ]
+  },
+  {
+   "tira": "¿QUÉ DESCUBRIÓ?",
+   "escenario": "berlin_patio",
+   "entrada": "fundido",
+   "camara": [
+    [
+     0,
+     300,
+     800,
+     2.0
+    ],
+    [
+     1,
+     300,
+     790,
+     2.15
+    ]
+   ],
+   "objetos": [
+    {
+     "tipo": "pizarra",
+     "x": 300,
+     "y": 980,
+     "s": 0.95,
+     "texto": "¿QUÉ|DESCUBRIÓ?",
+     "dibujar": [
+      0,
+      0.7
+     ]
+    }
+   ],
+   "efectos": [
+    "vineta",
+    "calida"
+   ]
+  },
+  {
+   "tira": "LAS ANTEOJERAS",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "plano": {
+    "tipo": "medio",
+    "de": "hans",
+    "dx": 120,
+    "empuje": 0.06
+   },
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 600,
+     "escala": 0.8,
+     "anteojeras": true,
+     "acts": [
+      [
+       0,
+       "mirar"
+      ]
+     ]
+    },
+    {
+     "quien": "pfungst",
+     "x": 260,
+     "escala": 0.82,
+     "acts": [
+      [
+       0,
+       "escribir"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ],
+     "prop": "libreta"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "circulo",
+     "x": 815,
+     "y": 860,
+     "r": 80,
+     "en": 0.35
+    }
+   ],
+   "efectos": [
+    "calida"
+   ]
+  },
+  {
+   "tira": "…Y FALLÓ",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "camara": [
+    [
+     0,
+     700,
+     980,
+     1.2
+    ],
+    [
+     1,
+     700,
+     980,
+     1.3
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 620,
+     "escala": 0.8,
+     "anteojeras": true,
+     "acts": [
+      [
+       0,
+       "fallar"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "publico",
+     "x0": 1050,
+     "x1": 1500,
+     "y": 1320,
+     "n": 4,
+     "s": 0.62,
+     "mira": -1,
+     "reaccion": [
+      0.3,
+      "sorprendido"
+     ],
+     "semilla": 7
+    },
+    {
+     "tipo": "contador",
+     "x": 880,
+     "y": 560,
+     "hasta": 9,
+     "en": 0,
+     "fin": 0.9,
+     "color": "#C8312B",
+     "hud": true
+    }
+   ],
+   "sacudida": [
+    0.5
+   ],
+   "efectos": [
+    "calida"
+   ]
+  },
+  {
+   "tira": "LA CLAVE",
+   "escenario": "estudio",
+   "entrada": "zoom",
+   "plano": {
+    "tipo": "primer_plano",
+    "de": "pfungst",
+    "empuje": 0.12
+   },
+   "actores": [
+    {
+     "quien": "pfungst",
+     "x": 540,
+     "escala": 0.85,
+     "acts": [
+      [
+       0,
+       "quieto"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ]
+    }
+   ],
+   "efectos": [
+    "foco",
+    "fria"
+   ]
+  },
+  {
+   "tira": "NO SABÍA SUMAR",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "plano": {
+    "tipo": "primer_plano",
+    "de": "hans",
+    "dx": 170,
+    "dy": 180,
+    "empuje": 0.06
+   },
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 560,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "quieto"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "sello",
+     "texto": "3 + 2 = ?",
+     "x": 540,
+     "y": 1180,
+     "en": 0.15,
+     "color": "#9B2F27",
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ]
+  },
+  {
+   "tira": "LEÍA LAS CARAS",
+   "escenario": "berlin_patio",
+   "entrada": "fundido",
+   "plano": {
+    "tipo": "primer_plano",
+    "de": "osten",
+    "empuje": 0.1
+   },
+   "actores": [
+    {
+     "quien": "osten",
+     "x": 540,
+     "escala": 0.85,
+     "acts": [
+      [
+       0,
+       "quieto"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ],
+      [
+       0.6,
+       "alivio"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "circulo",
+     "x": 540,
+     "y": 640,
+     "r": 120,
+     "en": 0.2,
+     "hud": true
+    },
+    {
+     "tipo": "texto",
+     "texto": "CEJAS",
+     "x": 840,
+     "y": 520,
+     "en": 0.3,
+     "tam": 44,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida"
+   ]
+  },
+  {
+   "tira": "SE RELAJABA…",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "camara": [
+    [
+     0,
+     600,
+     960,
+     1.15
+    ],
+    [
+     1,
+     600,
+     950,
+     1.22
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "osten",
+     "x": 240,
+     "escala": 0.82,
+     "acts": [
+      [
+       0,
+       "quieto"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ],
+      [
+       0.55,
+       "alivio"
+      ]
+     ]
+    },
+    {
+     "quien": "hans",
+     "x": 760,
+     "escala": 0.78,
+     "mira": -1,
+     "acts": [
+      [
+       0,
+       "golpear",
+       {
+        "vel": 2.4
+       }
+      ],
+      [
+       0.6,
+       "quieto"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "flecha",
+     "de": [
+      260,
+      640,
+      560,
+      720
+     ],
+     "en": 0.5,
+     "texto": "SE RELAJA",
+     "curva": 40,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida"
+   ]
+  },
+  {
+   "tira": "…Y ÉL PARABA",
+   "escenario": "berlin_patio",
+   "entrada": "corte",
+   "camara": [
+    [
+     0,
+     760,
+     1180,
+     2.3
+    ],
+    [
+     1,
+     760,
+     1170,
+     2.4
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "hans",
+     "x": 600,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "quieto"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "contador",
+     "x": 880,
+     "y": 560,
+     "hasta": 5,
+     "en": 0,
+     "fin": 0.01,
+     "color": "#2F7A3A",
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida"
+   ]
+  },
+  {
+   "tira": "ESTO ES LO QUE HOY SABEMOS",
+   "escenario": "laboratorio",
+   "entrada": "barrido",
+   "camara": [
+    [
+     0,
+     540,
+     880,
+     1.0
+    ],
+    [
+     1,
+     560,
+     860,
+     1.08
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "cientifica",
+     "x": 260,
+     "escala": 0.82,
+     "acts": [
+      [
+       0,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "feliz"
+      ]
+     ]
+    },
+    {
+     "quien": "cientifico",
+     "x": 840,
+     "escala": 0.84,
+     "mira": -1,
+     "acts": [
+      [
+       0,
+       "asentir"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "neutral"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "pantalla",
+     "x": 540,
+     "y": 560,
+     "s": 0.8,
+     "texto": "EFECTO HANS EL LISTO",
+     "hud": true
+    }
+   ],
+   "efectos": []
+  },
+  {
+   "tira": "CASO CERRADO",
+   "escenario": "berlin_calle",
+   "entrada": "fundido",
+   "camara": [
+    [
+     0,
+     640,
+     900,
+     1.05
+    ],
+    [
+     1,
+     760,
+     900,
+     1.0
+    ]
+   ],
+   "actores": [
+    {
+     "quien": "hans",
+     "y": 1330,
+     "escala": 0.7,
+     "mira": -1,
+     "ruta": [
+      [
+       0,
+       900
+      ],
+      [
+       1,
+       420
+      ]
+     ],
+     "acts": [
+      [
+       0,
+       "andar",
+       {
+        "vel": 0.8
+       }
+      ]
+     ]
+    },
+    {
+     "quien": "osten",
+     "y": 1350,
+     "escala": 0.76,
+     "mira": -1,
+     "ruta": [
+      [
+       0,
+       1180
+      ],
+      [
+       1,
+       700
+      ]
+     ],
+     "acts": [
+      [
+       0,
+       "andar",
+       {
+        "vel": 0.8
+       }
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "feliz"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "sello",
+     "texto": "CASO CERRADO",
+     "x": 540,
+     "y": 560,
+     "en": 0.15,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida",
+    "polvo"
+   ]
+  }
+ ],
+ "cuentaAtrasEscena": {
+  "escenario": "berlin_patio",
+  "camara": [
+   [
+    0,
+    640,
+    900,
+    1.0
+   ],
+   [
+    1,
+    640,
+    880,
+    1.15
+   ]
+  ],
+  "actores": [
+   {
+    "quien": "hans",
+    "x": 640,
+    "escala": 0.8,
+    "acts": [
+     [
+      0,
+      "quieto"
+     ]
+    ]
+   },
+   {
+    "quien": "osten",
+    "x": 260,
+    "escala": 0.8,
+    "acts": [
+     [
+      0,
+      "quieto"
+     ]
+    ],
+    "cara": [
+     [
+      0,
+      "pensativo"
+     ]
+    ]
+   }
+  ],
+  "objetos": [
+   {
+    "tipo": "reloj",
+    "x": 300,
+    "y": 520,
+    "s": 0.8,
+    "hud": true
+   }
+  ],
+  "efectos": [
+   "vineta",
+   "calida"
+  ]
+ }
+}

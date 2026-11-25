@@ -1,4 +1,4 @@
-# Archivo Enigma · estado del trabajo (actualizado 22/11/2026)
+# Archivo Enigma · estado del trabajo (actualizado 25/11/2026)
 
 Canal en español de vídeos animados 2D (historia, misterio, acertijos, curiosidades, noticias). Lema: «Lo que la historia no te contó.» El prompt completo y vigente está en `prompt-canal.md`: síguelo siempre. Cómo producir: `LEEME.md`.
 
@@ -37,8 +37,10 @@ Continúa con el primer punto de «Pendiente» sin volver a preguntar lo ya deci
 | Caso real · El robo de la Mona Lisa (Peruggia, 1911) | «Un acertijo real», Natural | Hecho (25/11) con boceto previo. `escenas/mona.js`. |
 | Caso real · La Copa del Mundo y el perro Pickles (1966) | «Un acertijo real», Natural | Hecho (25/11) con boceto previo. `escenas/copa.js`. |
 | Caso real · Hans el Listo, el caballo que «sumaba» (1904) | «Un acertijo real», Natural | Hecho (25/11) con boceto previo. `escenas/hans.js`. |
+| Hans el Listo **rehecho con motor 2** | Igual | Hecho (25/11): `guiones/hans.json`, `proyectos/hans2.json` → `salida/hans2-9x16.mp4`. Pasa el QC. Comparativa: `trabajo/cmp/comparativa.jpg`. |
 
 ## Pendiente (en este orden)
+0. Todo vídeo nuevo se hace con **motor 2** (ver LEEME.md). Mejoras posibles: más escenarios y animales en la biblioteca; el primer plano del caballo es algo tosco.
 1. **El baile de Estrasburgo (1518)**: historia/misterio, paleta Discreta, 35–45 s. Guion ya verificado (abajo). Falta generar la voz, crear `escenas/estrasburgo.js` y montar.
 2. Opcional: rehacer Diátlov con cierre «Esto es lo que hoy sabemos» (alud de placa, Gaume y Puzrin 2021) y sin «CASO Nº».
 3. Opcional: en el vídeo de la luna, la luna tapa a medias el rótulo «MEDIANOCHE: ARRIBA» hacia el segundo 43 (corregido ya en `escenas/luna.js`; solo haría falta re-renderizar si el dueño lo pide).

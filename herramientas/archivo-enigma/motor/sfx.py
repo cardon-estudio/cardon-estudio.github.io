@@ -126,6 +126,43 @@ if "bell" in cfg:
     b = sum(a*np.sin(2*np.pi*f*tt)*np.exp(-tt*d) for f, a, d in ((1318.5, 1, 2.2), (2637, .45, 3.5), (3951, .2, 5), (659.3, .35, 2.5)))
     add(norm(b, 1.0), cfg["bell"], 0.55)
 
+# ---------- efectos por evento (motor 2) ----------
+def env(n, a=.005, d=.2):
+    tt = np.arange(n) / SR; return np.minimum(1, tt / a) * np.exp(-tt / d)
+def ev_casco():
+    n = int(.25 * SR); tt = np.arange(n) / SR
+    s = .9 * bp(rng.standard_normal(n), 600, 2600) * np.exp(-tt * 45) + .7 * np.sin(2 * np.pi * 180 * tt) * np.exp(-tt * 30)
+    return norm(s, 1)
+def ev_murmullo(dur=2.2):
+    n = int(dur * SR); tt = np.arange(n) / SR; x = bp(rng.standard_normal(n), 250, 1400)
+    am = .5 + .5 * np.abs(np.sin(2 * np.pi * 3.1 * tt) * np.sin(2 * np.pi * 1.3 * tt + 1))
+    return norm(x * am * np.sin(np.pi * tt / dur) ** .5, 1)
+def ev_aplauso(dur=1.8):
+    n = int(dur * SR); s = np.zeros(n)
+    for k in range(int(dur * 28)):
+        i0 = int(rng.uniform(0, n - 3000)); c = bp(rng.standard_normal(1800), 900, 5000) * np.exp(-np.arange(1800) / SR * 90); s[i0:i0 + 1800] += c * rng.uniform(.5, 1)
+    return norm(s * np.sin(np.pi * np.arange(n) / n) ** .4, 1)
+def ev_tiza(dur=.9):
+    n = int(dur * SR); tt = np.arange(n) / SR; x = bp(rng.standard_normal(n), 2500, 7000)
+    return norm(x * (.6 + .4 * np.sin(2 * np.pi * 7 * tt) ** 2) * np.sin(np.pi * tt / dur), 1)
+def ev_pasos(dur=1.6):
+    n = int(dur * SR); s = np.zeros(n)
+    for k in np.arange(0, dur - .2, .42):
+        i0 = int(k * SR); m = int(.12 * SR); c = bp(rng.standard_normal(m), 200, 1800) * np.exp(-np.arange(m) / SR * 40); s[i0:i0 + m] += c
+    return norm(s, 1)
+def ev_papel():
+    n = int(.5 * SR); return norm(bp(rng.standard_normal(n), 1500, 7000) * env(n, .01, .12), 1)
+def ev_campana():
+    n = int(1.6 * SR); tt = np.arange(n) / SR
+    return norm(sum(a * np.sin(2 * np.pi * f * tt) * np.exp(-tt * d) for f, a, d in ((1046, 1, 2.5), (2093, .4, 4), (3140, .2, 6))), 1)
+EV = {"casco": (ev_casco, .45), "murmullo": (ev_murmullo, .35), "aplauso": (ev_aplauso, .4), "tiza": (ev_tiza, .3), "pasos": (ev_pasos, .35), "papel": (ev_papel, .35), "campana": (ev_campana, .4)}
+for t0, tipo in cfg.get("eventos", []):
+    if tipo.startswith("cascos"):          # cascos×N: N golpes seguidos
+        nrep = int(tipo.split("x")[1]) if "x" in tipo else 5
+        for r in range(nrep): add(ev_casco(), t0 + r * (1 / 2.6), .5)
+    elif tipo in EV:
+        f, g = EV[tipo]; add(f(), t0, g)
+
 wavfile.write(sys.argv[2], SR, (bed * 0.9).astype(np.float32))
 fx = sosfilt(butter(2, 140, btype="high", fs=SR, output="sos"), fx)
 wavfile.write(sys.argv[3], SR, fx.astype(np.float32))
