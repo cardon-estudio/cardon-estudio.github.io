@@ -1,0 +1,50 @@
+{
+ "nombre": "mona",
+ "voz": "https://elevenlabsusercontent.com/database/workspace/1b047664c9914e53a493aab8c5a8c5e5/content_generation/qc0rxOPEUiXYdkhkW39K/ykacYgQa72YNYhXXhE7X/content.mp3?Expires=1795622400&KeyName=assets-cdn-key-1&Signature=YWPxBm0TnbAhyZvlec7kEFRrbLA=",
+ "velocidad": 1.15,
+ "pausa": 0.16,
+ "escenas": "escenas/mona.js",
+ "frases": [
+  "El cuadro más famoso del mundo desaparece del Louvre...",
+  "y nadie se da cuenta en un día *entero.",
+  "¿Cómo lo *sacaron?",
+  "Un acertijo *real.",
+  "París, agosto de mil novecientos once.",
+  "Vincenzo Peruggia, un *cristalero italiano, conoce bien el museo...",
+  "porque había *trabajado allí.",
+  "Tienes diez *segundos.",
+  "¿Cómo salió con la *Mona Lisa?",
+  "*Tiempo.",
+  "Peruggia se escondió en un *armario y pasó la noche dentro.",
+  "Por la mañana, con la *bata blanca de los trabajadores, descolgó el cuadro...",
+  "lo escondió bajo la *bata...",
+  "y salió *andando.",
+  "Nadie para a un hombre de *uniforme.",
+  "Y nadie notó el *hueco hasta el día siguiente.",
+  "Esto es lo que hoy sabemos:",
+  "la tuvo dos años escondida en su *piso.",
+  "Le pillaron en *Florencia, al intentar venderla.",
+  "Caso *cerrado.",
+  "Cuéntamelo en *comentarios.",
+  "Síguenos para el próximo *expediente."
+ ],
+ "anclas": [
+  0,
+  3,
+  4,
+  7,
+  9,
+  11,
+  15,
+  16,
+  19
+ ],
+ "cuenta_atras_tras": 8,
+ "quitar": [],
+ "golpes": [
+  10,
+  13,
+  15,
+  18
+ ]
+}

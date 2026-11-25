@@ -1,0 +1,53 @@
+{
+ "nombre": "copa",
+ "voz": "https://elevenlabsusercontent.com/database/workspace/1b047664c9914e53a493aab8c5a8c5e5/content_generation/it1UteLTNzWVuk5y7usZ/ZA1zJz6wCzk87TjDbzyw/content.mp3?Expires=1795622400&KeyName=assets-cdn-key-1&Signature=1iclnEPKG11r-1d0rO0RTjgnPUc=",
+ "velocidad": 1.15,
+ "pausa": 0.16,
+ "escenas": "escenas/copa.js",
+ "frases": [
+  "Roban la *Copa del Mundo cuatro meses antes del Mundial...",
+  "y la encuentra el detective menos *pensado.",
+  "¿*Quién?",
+  "Un acertijo *real.",
+  "Londres, marzo de mil novecientos sesenta y seis.",
+  "El trofeo desaparece de una *exposición.",
+  "La policía busca por toda la *ciudad.",
+  "Hasta llega una petición de *rescate.",
+  "Una semana después, David Corbett sale de casa a dar un *paseo.",
+  "Tienes diez *segundos.",
+  "¿Quién encontró la *copa?",
+  "*Tiempo.",
+  "No fue él.",
+  "Fue su *perro: Pickles.",
+  "Pickles olfateó un paquete envuelto en *periódico, bajo un seto.",
+  "Dentro...",
+  "estaba la *Copa del Mundo.",
+  "Esto es lo que hoy sabemos:",
+  "Inglaterra ganó ese *Mundial...",
+  "y Pickles recibió una *medalla de plata.",
+  "Caso *cerrado.",
+  "¿Lo habías *adivinado?",
+  "Cuéntamelo en *comentarios.",
+  "Síguenos para el próximo *expediente."
+ ],
+ "anclas": [
+  0,
+  3,
+  4,
+  6,
+  8,
+  9,
+  11,
+  14,
+  17,
+  20
+ ],
+ "cuenta_atras_tras": 10,
+ "quitar": [],
+ "golpes": [
+  7,
+  13,
+  16,
+  19
+ ]
+}
