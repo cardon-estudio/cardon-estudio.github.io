@@ -1,0 +1,1007 @@
+{
+ "personajes": {
+  "napoleon": {
+   "piel": "#EBC6A2",
+   "pelo": "#3B2418",
+   "peinado": "corto",
+   "sombrero": "bicornio",
+   "colorSombrero": "#1E1E24",
+   "ropa": {
+    "tipo": "levita",
+    "color": "#2F3E6E",
+    "pantalon": "#EDE6D6",
+    "camisa": "#F2EEE6",
+    "botones": "#C9A227"
+   }
+  },
+  "kempelen": {
+   "piel": "#E8C29C",
+   "pelo": "#F2EEE6",
+   "peinado": "corto",
+   "sombrero": "peluca",
+   "ropa": {
+    "tipo": "levita",
+    "color": "#7A2E3E",
+    "pantalon": "#3B2A2A",
+    "camisa": "#F2EEE6",
+    "botones": "#C9A227"
+   }
+  },
+  "emperatriz": {
+   "piel": "#F0CDAA",
+   "pelo": "#C9A66B",
+   "peinado": "mono",
+   "ropa": {
+    "tipo": "vestido",
+    "color": "#5E7FA8",
+    "camisa": "#F2EEE6"
+   }
+  },
+  "rival": {
+   "piel": "#DDB08A",
+   "pelo": "#F2EEE6",
+   "peinado": "corto",
+   "sombrero": "peluca",
+   "edad": "mayor",
+   "ropa": {
+    "tipo": "levita",
+    "color": "#4E6B4A",
+    "pantalon": "#2E2B28",
+    "camisa": "#F2EEE6"
+   }
+  },
+  "jugador": {
+   "piel": "#E8C29C",
+   "pelo": "#2E2218",
+   "peinado": "corto",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#4A3B2E",
+    "pantalon": "#2E2B28",
+    "camisa": "#F2EEE6"
+   }
+  }
+ },
+ "escenas": [
+  {
+   "tira": "VIENA, 1809",
+   "escenario": "palacio",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "napoleon",
+     "x": 940,
+     "escala": 0.78,
+     "acts": [
+      [
+       0,
+       "pensar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ],
+      [
+       0.7,
+       "sorpresa"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 500,
+     "y": 1300,
+     "s": 0.9,
+     "juega": 1
+    }
+   ],
+   "efectos": [
+    "rayos",
+    "polvo",
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     420,
+     900,
+     1.7
+    ],
+    [
+     1,
+     600,
+     960,
+     1.15
+    ]
+   ]
+  },
+  {
+   "tira": "¡JAQUE MATE!",
+   "escenario": "palacio",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "napoleon",
+     "x": 700,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "sorprendido"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "enfado"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "¡JAQUE MATE!",
+     "x": 540,
+     "y": 560,
+     "en": 0.1,
+     "tam": 80,
+     "color": "#9B2F27",
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ],
+   "plano": {
+    "tipo": "primer_plano",
+    "de": "napoleon",
+    "empuje": 0.12
+   },
+   "sacudida": [
+    0.1
+   ]
+  },
+  {
+   "tira": "¿CÓMO ES POSIBLE?",
+   "escenario": "palacio",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "juega": 1
+    },
+    {
+     "tipo": "texto",
+     "texto": "¿CÓMO?",
+     "x": 540,
+     "y": 330,
+     "en": 0.25,
+     "tam": 90,
+     "color": "#9B2F27",
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     306,
+     780,
+     2.6
+    ],
+    [
+     1,
+     306,
+     760,
+     3.0
+    ]
+   ]
+  },
+  {
+   "tira": "UN ACERTIJO REAL",
+   "escenario": "cartel",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 540,
+     "y": 860,
+     "s": 1.25,
+     "texto": "¡INVENCIBLE!",
+     "sub": "UN ACERTIJO REAL"
+    },
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1080,
+     "s": 0.42,
+     "juega": 1
+    }
+   ],
+   "efectos": [],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     0.95
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "EL TURCO",
+   "escenario": "palacio",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "juega": 1
+    },
+    {
+     "tipo": "publico",
+     "x0": 60,
+     "x1": 300,
+     "y": 1340,
+     "n": 3,
+     "s": 0.6,
+     "mira": 1,
+     "sombreros": [
+      "peluca",
+      "peluca",
+      "bicornio"
+     ],
+     "semilla": 3
+    },
+    {
+     "tipo": "publico",
+     "x0": 820,
+     "x1": 1040,
+     "y": 1340,
+     "n": 3,
+     "s": 0.6,
+     "mira": -1,
+     "sombreros": [
+      "peluca",
+      "peluca",
+      "bicornio"
+     ],
+     "semilla": 8,
+     "reaccion": [
+      0.4,
+      "sorprendido"
+     ]
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     900,
+     1.0
+    ],
+    [
+     1,
+     540,
+     880,
+     1.12
+    ]
+   ]
+  },
+  {
+   "tira": "VIENA, 1770",
+   "escenario": "palacio",
+   "entrada": "fundido",
+   "actores": [
+    {
+     "quien": "kempelen",
+     "x": 300,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "andar"
+      ],
+      [
+       0.35,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "orgulloso"
+      ]
+     ],
+     "ruta": [
+      [
+       0,
+       120
+      ],
+      [
+       0.35,
+       300
+      ]
+     ]
+    },
+    {
+     "quien": "emperatriz",
+     "x": 860,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "mirar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "neutral"
+      ],
+      [
+       0.6,
+       "sorpresa"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 560,
+     "y": 1300,
+     "s": 0.7
+    }
+   ],
+   "efectos": [
+    "calida",
+    "polvo"
+   ],
+   "camara": [
+    [
+     0,
+     560,
+     900,
+     1.15
+    ],
+    [
+     1,
+     600,
+     900,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "PUERTAS ABIERTAS",
+   "escenario": "palacio",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "kempelen",
+     "x": 140,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "orgulloso"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "abierto": 0.15
+    },
+    {
+     "tipo": "publico",
+     "x0": 860,
+     "x1": 1080,
+     "y": 1360,
+     "n": 2,
+     "s": 0.62,
+     "mira": -1,
+     "sombreros": [
+      "peluca",
+      "peluca",
+      "bicornio"
+     ],
+     "semilla": 5
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1000,
+     1.25
+    ],
+    [
+     1,
+     540,
+     1040,
+     1.4
+    ]
+   ]
+  },
+  {
+   "tira": "SOLO ENGRANAJES",
+   "escenario": "palacio",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "abierto": 0.0001
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1150,
+     2.2
+    ],
+    [
+     1,
+     540,
+     1150,
+     2.6
+    ]
+   ]
+  },
+  {
+   "tira": "EUROPA Y AMÉRICA",
+   "escenario": "negro",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "periodico",
+     "x": 540,
+     "y": 860,
+     "s": 0.95,
+     "cabecera": "LONDON GAZETTE",
+     "titular": "¡OTRA VICTORIA!"
+    }
+   ],
+   "efectos": [
+    "sepia"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.04
+    ]
+   ]
+  },
+  {
+   "tira": "CASI INVENCIBLE",
+   "escenario": "palacio",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "rival",
+     "x": 880,
+     "escala": 0.78,
+     "acts": [
+      [
+       0,
+       "pensar"
+      ],
+      [
+       0.6,
+       "negar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "duda"
+      ],
+      [
+       0.6,
+       "enfado"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 420,
+     "y": 1300,
+     "s": 0.9,
+     "juega": 1
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     560,
+     980,
+     1.35
+    ],
+    [
+     1,
+     600,
+     980,
+     1.45
+    ]
+   ]
+  },
+  {
+   "tira": "¿DÓNDE ESTÁ EL TRUCO?",
+   "escenario": "palacio",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "juega": 1
+    },
+    {
+     "tipo": "circulo",
+     "x": 540,
+     "y": 1150,
+     "r": 330,
+     "en": 0.2
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1000,
+     1.2
+    ],
+    [
+     1,
+     540,
+     1000,
+     1.3
+    ]
+   ]
+  },
+  {
+   "tira": "HABÍA UN HOMBRE",
+   "escenario": "palacio",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "dentro": 0.05,
+     "jugador": "jugador"
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1150,
+     1.3
+    ],
+    [
+     1,
+     540,
+     1150,
+     2.0
+    ]
+   ],
+   "sacudida": [
+    0.05
+   ]
+  },
+  {
+   "tira": "ESCONDIDO DENTRO",
+   "escenario": "palacio",
+   "entrada": "fundido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "dentro": 0.0001,
+     "jugador": "jugador"
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     520,
+     1200,
+     2.6
+    ],
+    [
+     1,
+     500,
+     1200,
+     2.9
+    ]
+   ]
+  },
+  {
+   "tira": "SE DESLIZABA",
+   "escenario": "palacio",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "abierto": 0.0001,
+     "dentro": 0.5,
+     "jugador": "jugador"
+    },
+    {
+     "tipo": "flecha",
+     "de": [
+      300,
+      1180,
+      760,
+      1180
+     ],
+     "en": 0.1,
+     "curva": 40,
+     "texto": "SE MOVÍA"
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1150,
+     1.6
+    ],
+    [
+     1,
+     540,
+     1150,
+     1.7
+    ]
+   ]
+  },
+  {
+   "tira": "IMANES",
+   "escenario": "negro",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "tablero_iman",
+     "x": 540,
+     "y": 700,
+     "s": 1.25,
+     "en": 0.15
+    },
+    {
+     "tipo": "texto",
+     "texto": "IMANES",
+     "x": 540,
+     "y": 1200,
+     "en": 0.3,
+     "tam": 70,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.06
+    ]
+   ]
+  },
+  {
+   "tira": "UNA PALANCA",
+   "escenario": "palacio",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "juega": 1,
+     "dentro": 0.0001,
+     "jugador": "jugador"
+    },
+    {
+     "tipo": "flecha",
+     "de": [
+      560,
+      1180,
+      340,
+      940
+     ],
+     "en": 0.15,
+     "curva": 60,
+     "texto": "PALANCA"
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     400,
+     900,
+     1.7
+    ],
+    [
+     1,
+     420,
+     880,
+     1.9
+    ]
+   ]
+  },
+  {
+   "tira": "LO QUE HOY SABEMOS",
+   "escenario": "negro",
+   "entrada": "fundido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "juega": 0
+    },
+    {
+     "tipo": "texto",
+     "texto": "FILADELFIA, 1854",
+     "x": 540,
+     "y": 420,
+     "en": 0.2,
+     "tam": 64,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "fuego"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1000,
+     1.1
+    ],
+    [
+     1,
+     540,
+     1000,
+     1.25
+    ]
+   ]
+  },
+  {
+   "tira": "EL SECRETO",
+   "escenario": "negro",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "periodico",
+     "x": 540,
+     "y": 860,
+     "s": 0.95,
+     "cabecera": "THE CHESS MONTHLY",
+     "titular": "SU SECRETO"
+    }
+   ],
+   "efectos": [
+    "sepia"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "CASO CERRADO",
+   "escenario": "palacio",
+   "entrada": "fundido",
+   "actores": [
+    {
+     "quien": "napoleon",
+     "x": 880,
+     "escala": 0.76,
+     "acts": [
+      [
+       0,
+       "manosCintura"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "duda"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "turco",
+     "x": 420,
+     "y": 1300,
+     "s": 0.9,
+     "juega": 1
+    },
+    {
+     "tipo": "sello",
+     "texto": "CASO CERRADO",
+     "x": 540,
+     "y": 520,
+     "en": 0.15,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida",
+    "polvo"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     900,
+     1.05
+    ],
+    [
+     1,
+     540,
+     900,
+     0.98
+    ]
+   ]
+  }
+ ],
+ "cuentaAtrasEscena": {
+  "tira": "",
+  "escenario": "palacio",
+  "entrada": "fundido",
+  "actores": [],
+  "objetos": [
+   {
+    "tipo": "turco",
+    "x": 540,
+    "y": 1300,
+    "s": 0.9
+   },
+   {
+    "tipo": "reloj",
+    "x": 300,
+    "y": 520,
+    "s": 0.8,
+    "hud": true
+   }
+  ],
+  "efectos": [
+   "vineta",
+   "calida"
+  ],
+  "camara": [
+   [
+    0,
+    540,
+    1000,
+    1.1
+   ],
+   [
+    1,
+    540,
+    980,
+    1.25
+   ]
+  ]
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "nombre": "hadas",
+ "voz": "",
+ "velocidad": 1.15,
+ "pausa": 0.14,
+ "frases": [
+  "Dos niñas fotografían *hadas...",
+  "y engañan al creador de *Sherlock Holmes.",
+  "¿Cómo lo *hicieron?",
+  "Un acertijo *real.",
+  "Inglaterra, *1917.",
+  "Elsie, de dieciséis años, y su prima Frances, de *nueve...",
+  "juegan junto a un *arroyo.",
+  "Vuelven con una cámara...",
+  "y en la foto aparecen *hadas bailando.",
+  "Arthur Conan *Doyle las ve...",
+  "y en 1920 las publica como *reales.",
+  "Tienes diez *segundos.",
+  "¿Cómo se hicieron las *fotos?",
+  "*Tiempo.",
+  "Las hadas eran de *papel.",
+  "Elsie las copió de un libro *infantil...",
+  "las recortó...",
+  "y las sujetó en la hierba con *alfileres.",
+  "Por eso no se movían ni un *pelo.",
+  "Esto es lo que hoy sabemos:",
+  "en 1983, ya ancianas, las primas lo *confesaron...",
+  "aunque Frances juró hasta el final que la última foto era *auténtica.",
+  "Caso *cerrado.",
+  "Síguenos para el próximo *expediente."
+ ],
+ "anclas": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  10,
+  11,
+  13,
+  15,
+  17,
+  18,
+  19,
+  21,
+  22
+ ],
+ "cuenta_atras_tras": 12,
+ "quitar": [],
+ "golpes": [
+  13,
+  14
+ ],
+ "guion": "guiones/hadas.json",
+ "rotulo": "LAS HADAS DE COTTINGLEY · 1917",
+ "sonidos": [
+  [
+   7,
+   "papel",
+   0.3
+  ],
+  [
+   10,
+   "papel",
+   0
+  ],
+  [
+   16,
+   "tiza",
+   0
+  ],
+  [
+   22,
+   "campana",
+   0
+  ]
+ ]
+}

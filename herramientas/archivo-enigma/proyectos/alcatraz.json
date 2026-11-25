@@ -1,0 +1,87 @@
+{
+ "nombre": "alcatraz",
+ "voz": "",
+ "velocidad": 1.15,
+ "pausa": 0.14,
+ "frases": [
+  "Los guardias ven a tres presos dormir *toda la noche...",
+  "pero por la mañana no *están.",
+  "¿Cómo *escaparon?",
+  "Un acertijo *real.",
+  "Alcatraz, *1962.",
+  "La cárcel más segura de Estados Unidos, en una isla rodeada de agua *helada.",
+  "Frank Morris y los hermanos *Anglin...",
+  "agrandan los agujeros de ventilación de sus celdas con *cucharas.",
+  "Trabajan a *escondidas...",
+  "y aun así, los guardias los ven siempre en la *cama.",
+  "Tienes diez *segundos.",
+  "¿Quién dormía en las *camas?",
+  "*Tiempo.",
+  "*Nadie.",
+  "Eran cabezas *falsas.",
+  "Las hicieron con jabón, papel higiénico...",
+  "y pelo de *verdad de la barbería.",
+  "Y huyeron en una balsa hecha con más de cincuenta *impermeables.",
+  "Esto es lo que hoy sabemos:",
+  "nunca se les volvió a *ver...",
+  "y Alcatraz cerró al año *siguiente.",
+  "Caso *cerrado.",
+  "Síguenos para el próximo *expediente."
+ ],
+ "anclas": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  12,
+  14,
+  15,
+  17,
+  18,
+  20,
+  21
+ ],
+ "cuenta_atras_tras": 11,
+ "quitar": [],
+ "golpes": [
+  1,
+  12,
+  13
+ ],
+ "guion": "guiones/alcatraz.json",
+ "rotulo": "LA FUGA DE ALCATRAZ · 1962",
+ "sonidos": [
+  [
+   0,
+   "pasos",
+   0
+  ],
+  [
+   7,
+   "tiza",
+   0
+  ],
+  [
+   9,
+   "pasos",
+   0
+  ],
+  [
+   13,
+   "papel",
+   0
+  ],
+  [
+   21,
+   "campana",
+   0
+  ]
+ ]
+}

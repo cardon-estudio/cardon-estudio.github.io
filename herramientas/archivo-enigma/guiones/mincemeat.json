@@ -1,0 +1,1050 @@
+{
+ "personajes": {
+  "pescador": {
+   "piel": "#C98F67",
+   "pelo": "#2E2218",
+   "peinado": "corto",
+   "barba": "barba",
+   "colorBarba": "#3B2418",
+   "sombrero": "gorra",
+   "colorSombrero": "#2F3E5C",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#2F4A6B",
+    "pantalon": "#3B342C",
+    "camisa": "#E8E0D0"
+   }
+  },
+  "espia": {
+   "piel": "#EBC6A2",
+   "pelo": "#3B2418",
+   "peinado": "corto",
+   "barba": "bigote",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#5A5E62",
+    "pantalon": "#3E4246",
+    "camisa": "#F2EEE6",
+    "corbata": "#2E3A5C"
+   }
+  },
+  "espia2": {
+   "piel": "#E8C29C",
+   "pelo": "#8A6A4A",
+   "peinado": "corto",
+   "gafas": "redondas",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#4A5A4A",
+    "pantalon": "#3E4438",
+    "camisa": "#F2EEE6",
+    "corbata": "#7A2E2E"
+   }
+  },
+  "oficial": {
+   "piel": "#E8C29C",
+   "pelo": "#C9A66B",
+   "peinado": "corto",
+   "sombrero": "quepis",
+   "colorSombrero": "#5A6450",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#5A6450",
+    "pantalon": "#3E4438",
+    "camisa": "#E8E0D0",
+    "corbata": "#2E3228"
+   }
+  }
+ },
+ "escenas": [
+  {
+   "tira": "HUELVA, 1943",
+   "escenario": "mar_noche",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cuerpo_mar",
+     "x": 420,
+     "y": 1250,
+     "s": 0.9,
+     "maletin": true
+    }
+   ],
+   "efectos": [
+    "agua",
+    "fria"
+   ],
+   "camara": [
+    [
+     0,
+     420,
+     1250,
+     2.4
+    ],
+    [
+     1,
+     500,
+     1100,
+     1.3
+    ]
+   ]
+  },
+  {
+   "tira": "CAMBIA LA GUERRA",
+   "escenario": "negro",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "mapa",
+     "x": 540,
+     "y": 860,
+     "s": 0.78,
+     "etiquetas": [
+      "grecia",
+      "sicilia",
+      "cerdena",
+      "huelva"
+     ],
+     "flechas": [
+      [
+       "huelva",
+       "sicilia",
+       0.1,
+       "#2F6EB5"
+      ]
+     ]
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.06
+    ]
+   ]
+  },
+  {
+   "tira": "¿CÓMO?",
+   "escenario": "mar_noche",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cuerpo_mar",
+     "x": 420,
+     "y": 1250,
+     "s": 0.9,
+     "maletin": true
+    },
+    {
+     "tipo": "texto",
+     "texto": "¿CÓMO?",
+     "x": 540,
+     "y": 480,
+     "en": 0.25,
+     "tam": 90,
+     "color": "#9B2F27",
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ],
+   "camara": [
+    [
+     0,
+     380,
+     1300,
+     3.0
+    ],
+    [
+     1,
+     380,
+     1300,
+     3.4
+    ]
+   ]
+  },
+  {
+   "tira": "UN ACERTIJO REAL",
+   "escenario": "cartel",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 540,
+     "y": 860,
+     "s": 1.25,
+     "texto": "¡TOP SECRET!",
+     "sub": "UN ACERTIJO REAL"
+    },
+    {
+     "tipo": "maletin",
+     "x": 540,
+     "y": 1000,
+     "s": 0.5,
+     "sello": true
+    }
+   ],
+   "efectos": [],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     0.95
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "HUELVA, 1943",
+   "escenario": "playa",
+   "entrada": "barrido",
+   "actores": [
+    {
+     "quien": "pescador",
+     "x": 900,
+     "escala": 0.78,
+     "acts": [
+      [
+       0,
+       "andar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "neutral"
+      ]
+     ],
+     "ruta": [
+      [
+       0,
+       1100
+      ],
+      [
+       1,
+       860
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [],
+   "efectos": [
+    "calida",
+    "polvo"
+   ],
+   "camara": [
+    [
+     0,
+     400,
+     900,
+     1.0
+    ],
+    [
+     1,
+     700,
+     940,
+     1.08
+    ]
+   ]
+  },
+  {
+   "tira": "UN OFICIAL BRITÁNICO",
+   "escenario": "playa",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "pescador",
+     "x": 780,
+     "escala": 0.78,
+     "acts": [
+      [
+       0,
+       "mirar"
+      ],
+      [
+       0.3,
+       "sorprendido"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "neutral"
+      ],
+      [
+       0.3,
+       "miedo"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cuerpo_mar",
+     "x": 420,
+     "y": 1240,
+     "s": 0.8
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     560,
+     1100,
+     1.5
+    ],
+    [
+     1,
+     600,
+     1100,
+     1.6
+    ]
+   ]
+  },
+  {
+   "tira": "UN MALETÍN ENCADENADO",
+   "escenario": "playa",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "maletin",
+     "x": 360,
+     "y": 1240,
+     "s": 0.45,
+     "cadena": true
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ],
+   "camara": [
+    [
+     0,
+     300,
+     1240,
+     3.0
+    ],
+    [
+     1,
+     330,
+     1240,
+     3.3
+    ]
+   ]
+  },
+  {
+   "tira": "CARTAS SECRETAS",
+   "escenario": "negro",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "carta",
+     "x": 540,
+     "y": 860,
+     "s": 1.05,
+     "en": 0.05,
+     "titulo": "MÁS SECRETO"
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "OBJETIVO: GRECIA",
+   "escenario": "negro",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "carta",
+     "x": 540,
+     "y": 860,
+     "s": 1.05,
+     "en": 0,
+     "titulo": "MÁS SECRETO",
+     "texto": "Atacaremos|GRECIA"
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "LOS ALEMANES COPIAN",
+   "escenario": "mapas",
+   "entrada": "fundido",
+   "actores": [
+    {
+     "quien": "oficial",
+     "x": 380,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "escribir"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ],
+     "prop": "libreta"
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "carta",
+     "x": 820,
+     "y": 900,
+     "s": 0.45,
+     "en": 0,
+     "r": -6
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1000,
+     1.2
+    ],
+    [
+     1,
+     540,
+     980,
+     1.3
+    ]
+   ]
+  },
+  {
+   "tira": "TROPAS A GRECIA",
+   "escenario": "mapas",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "flecha",
+     "de": [
+      160,
+      330,
+      760,
+      560
+     ],
+     "en": 0.05,
+     "curva": 80,
+     "color": "#E04A3A"
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     560,
+     1.5
+    ],
+    [
+     1,
+     540,
+     560,
+     1.6
+    ]
+   ]
+  },
+  {
+   "tira": "PERO... SICILIA",
+   "escenario": "negro",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "mapa",
+     "x": 540,
+     "y": 860,
+     "s": 0.78,
+     "etiquetas": [
+      "grecia",
+      "sicilia",
+      "cerdena",
+      "huelva"
+     ],
+     "flechas": [
+      [
+       "londres",
+       "grecia",
+       0,
+       "#9AA0A4"
+      ],
+      [
+       "huelva",
+       "sicilia",
+       0.1,
+       "#2F6EB5"
+      ]
+     ],
+     "tachar": [
+      [
+       "grecia",
+       0.5
+      ]
+     ]
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ],
+   "sacudida": [
+    0.6
+   ]
+  },
+  {
+   "tira": "¿QUIÉN ERA?",
+   "escenario": "mar_noche",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cuerpo_mar",
+     "x": 560,
+     "y": 1240,
+     "s": 0.9
+    },
+    {
+     "tipo": "circulo",
+     "x": 560,
+     "y": 1180,
+     "r": 290,
+     "en": 0.25
+    }
+   ],
+   "efectos": [
+    "vineta",
+    "fria"
+   ],
+   "camara": [
+    [
+     0,
+     560,
+     1200,
+     1.4
+    ],
+    [
+     1,
+     560,
+     1200,
+     1.55
+    ]
+   ]
+  },
+  {
+   "tira": "NO ERA OFICIAL",
+   "escenario": "negro",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "sello",
+     "texto": "FALSO",
+     "x": 540,
+     "y": 860,
+     "en": 0.1
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ],
+   "sacudida": [
+    0.12
+   ]
+  },
+  {
+   "tira": "LONDRES",
+   "escenario": "mapas",
+   "entrada": "fundido",
+   "actores": [
+    {
+     "quien": "espia",
+     "x": 300,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "hablar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ]
+    },
+    {
+     "quien": "espia2",
+     "x": 780,
+     "escala": 0.78,
+     "acts": [
+      [
+       0,
+       "asentir"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "triste"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [],
+   "efectos": [
+    "fria"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     980,
+     1.25
+    ],
+    [
+     1,
+     520,
+     980,
+     1.35
+    ]
+   ]
+  },
+  {
+   "tira": "«MAYOR WILLIAM MARTIN»",
+   "escenario": "mapas",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "espia",
+     "x": 300,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "escribir"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ],
+     "prop": "lapiz"
+    },
+    {
+     "quien": "espia2",
+     "x": 780,
+     "escala": 0.78,
+     "acts": [
+      [
+       0,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "feliz"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "MAYOR W. MARTIN",
+     "x": 540,
+     "y": 520,
+     "en": 0.3,
+     "tam": 56,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1000,
+     1.3
+    ],
+    [
+     1,
+     560,
+     1000,
+     1.4
+    ]
+   ]
+  },
+  {
+   "tira": "UNA VIDA INVENTADA",
+   "escenario": "negro",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "carta",
+     "x": 400,
+     "y": 760,
+     "s": 0.7,
+     "en": 0.02,
+     "r": -8,
+     "titulo": "MI AMOR",
+     "texto": "Te quiere,|Pam"
+    },
+    {
+     "tipo": "texto",
+     "texto": "ENTRADAS DE TEATRO",
+     "x": 600,
+     "y": 1250,
+     "en": 0.45,
+     "tam": 56,
+     "r": 6,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "DESDE UN SUBMARINO",
+   "escenario": "mar_noche",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cuerpo_mar",
+     "x": 300,
+     "y": 1180,
+     "s": 0.6
+    }
+   ],
+   "efectos": [
+    "agua",
+    "fria"
+   ],
+   "camara": [
+    [
+     0,
+     700,
+     1000,
+     1.6
+    ],
+    [
+     1,
+     600,
+     1080,
+     1.2
+    ]
+   ],
+   "opc": {
+    "submarino": [
+     720,
+     1010
+    ]
+   }
+  },
+  {
+   "tira": "LO QUE HOY SABEMOS",
+   "escenario": "negro",
+   "entrada": "fundido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "GLYNDWR MICHAEL",
+     "x": 540,
+     "y": 760,
+     "en": 0.25,
+     "tam": 70,
+     "hud": true
+    },
+    {
+     "tipo": "texto",
+     "texto": "GALÉS · SIN HOGAR",
+     "x": 540,
+     "y": 960,
+     "en": 0.55,
+     "tam": 50,
+     "r": 3,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "foco",
+    "sepia"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     900,
+     1.1
+    ],
+    [
+     1,
+     540,
+     900,
+     1.2
+    ]
+   ]
+  },
+  {
+   "tira": "ENTERRADO EN HUELVA",
+   "escenario": "playa",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "lapida",
+     "x": 540,
+     "y": 1300,
+     "s": 0.9,
+     "texto": "WILLIAM MARTIN|GLYNDWR MICHAEL"
+    }
+   ],
+   "efectos": [
+    "calida",
+    "polvo"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1000,
+     1.3
+    ],
+    [
+     1,
+     540,
+     1000,
+     1.45
+    ]
+   ],
+   "opc": {
+    "barca": false
+   }
+  },
+  {
+   "tira": "CASO CERRADO",
+   "escenario": "playa",
+   "entrada": "fundido",
+   "actores": [
+    {
+     "quien": "pescador",
+     "x": 760,
+     "escala": 0.78,
+     "acts": [
+      [
+       0,
+       "andar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "pensativo"
+      ]
+     ],
+     "ruta": [
+      [
+       0,
+       900
+      ],
+      [
+       1,
+       620
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "sello",
+     "texto": "CASO CERRADO",
+     "x": 540,
+     "y": 520,
+     "en": 0.15,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     600,
+     920,
+     1.05
+    ],
+    [
+     1,
+     640,
+     920,
+     0.98
+    ]
+   ]
+  }
+ ],
+ "cuentaAtrasEscena": {
+  "tira": "",
+  "escenario": "mar_noche",
+  "entrada": "fundido",
+  "actores": [],
+  "objetos": [
+   {
+    "tipo": "cuerpo_mar",
+    "x": 540,
+    "y": 1240,
+    "s": 0.9,
+    "maletin": true
+   },
+   {
+    "tipo": "reloj",
+    "x": 300,
+    "y": 520,
+    "s": 0.8,
+    "hud": true
+   }
+  ],
+  "efectos": [
+   "vineta",
+   "fria"
+  ],
+  "camara": [
+   [
+    0,
+    540,
+    1100,
+    1.2
+   ],
+   [
+    1,
+    540,
+    1100,
+    1.3
+   ]
+  ]
+ }
+}

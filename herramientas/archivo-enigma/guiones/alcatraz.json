@@ -1,0 +1,935 @@
+{
+ "personajes": {
+  "morris": {
+   "piel": "#E8C29C",
+   "pelo": "#5A3A22",
+   "peinado": "corto",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#8FA9C0",
+    "pantalon": "#3B4A5C",
+    "camisa": "#8FA9C0"
+   }
+  },
+  "anglin1": {
+   "piel": "#DDB08A",
+   "pelo": "#2E2218",
+   "peinado": "corto",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#8FA9C0",
+    "pantalon": "#3B4A5C",
+    "camisa": "#8FA9C0"
+   }
+  },
+  "anglin2": {
+   "piel": "#E8C29C",
+   "pelo": "#8A5A3A",
+   "peinado": "corto",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#8FA9C0",
+    "pantalon": "#3B4A5C",
+    "camisa": "#8FA9C0"
+   },
+   "barba": "bigote",
+   "colorBarba": "#6A4428"
+  },
+  "guardia": {
+   "piel": "#EBC6A2",
+   "pelo": "#3B2418",
+   "peinado": "corto",
+   "sombrero": "quepis",
+   "colorSombrero": "#2B2F3A",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#2B2F3A",
+    "pantalon": "#2B2F3A",
+    "camisa": "#9CB4C8",
+    "corbata": "#1E1E24"
+   }
+  }
+ },
+ "escenas": [
+  {
+   "tira": "ALCATRAZ, 1962",
+   "escenario": "celda",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "guardia",
+     "x": 160,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "mirar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "neutral"
+      ]
+     ],
+     "capa": 1.6
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cabeza_falsa",
+     "x": 590,
+     "y": 1066
+    }
+   ],
+   "efectos": [
+    "noche",
+    "reflector"
+   ],
+   "camara": [
+    [
+     0,
+     700,
+     1080,
+     2.4
+    ],
+    [
+     1,
+     640,
+     1000,
+     1.3
+    ]
+   ]
+  },
+  {
+   "tira": "CELDAS VACÍAS",
+   "escenario": "celda",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "guardia",
+     "x": 200,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "sorprendido"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "miedo"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "VACÍA",
+     "x": 700,
+     "y": 1000,
+     "en": 0.3,
+     "tam": 70,
+     "color": "#9B2F27"
+    }
+   ],
+   "efectos": [
+    "fria"
+   ],
+   "camara": [
+    [
+     0,
+     640,
+     1000,
+     1.3
+    ],
+    [
+     1,
+     640,
+     1000,
+     1.45
+    ]
+   ],
+   "opc": {
+    "camaX": 760
+   },
+   "sacudida": [
+    0.3
+   ]
+  },
+  {
+   "tira": "¿CÓMO ESCAPARON?",
+   "escenario": "isla_carcel",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "¿CÓMO?",
+     "x": 540,
+     "y": 480,
+     "en": 0.25,
+     "tam": 90,
+     "color": "#9B2F27",
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ],
+   "camara": [
+    [
+     0,
+     440,
+     900,
+     1.8
+    ],
+    [
+     1,
+     440,
+     880,
+     2.1
+    ]
+   ]
+  },
+  {
+   "tira": "UN ACERTIJO REAL",
+   "escenario": "cartel",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 540,
+     "y": 860,
+     "s": 1.25,
+     "texto": "¡FUGA!",
+     "sub": "UN ACERTIJO REAL"
+    },
+    {
+     "tipo": "cuchara",
+     "x": 540,
+     "y": 1060,
+     "s": 0.9,
+     "r": -30
+    }
+   ],
+   "efectos": [],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     0.95
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "ALCATRAZ, 1962",
+   "escenario": "isla_carcel",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [],
+   "efectos": [
+    "noche"
+   ],
+   "camara": [
+    [
+     0,
+     300,
+     900,
+     1.15
+    ],
+    [
+     1,
+     600,
+     940,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "AGUA HELADA",
+   "escenario": "isla_carcel",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "AGUA HELADA",
+     "x": 540,
+     "y": 520,
+     "en": 0.3,
+     "tam": 60,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "fria",
+    "agua"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1300,
+     1.6
+    ],
+    [
+     1,
+     540,
+     1340,
+     1.8
+    ]
+   ]
+  },
+  {
+   "tira": "MORRIS Y LOS ANGLIN",
+   "escenario": "celda",
+   "entrada": "fundido",
+   "actores": [
+    {
+     "quien": "anglin1",
+     "x": 220,
+     "escala": 0.78,
+     "acts": [
+      [
+       0,
+       "mirar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ]
+    },
+    {
+     "quien": "morris",
+     "x": 540,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "hablar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ]
+    },
+    {
+     "quien": "anglin2",
+     "x": 860,
+     "escala": 0.78,
+     "acts": [
+      [
+       0,
+       "asentir"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "duda"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [],
+   "efectos": [
+    "noche"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     980,
+     1.2
+    ],
+    [
+     1,
+     540,
+     980,
+     1.3
+    ]
+   ],
+   "opc": {
+    "rejas": false,
+    "camaX": 1400
+   }
+  },
+  {
+   "tira": "CON CUCHARAS",
+   "escenario": "celda",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "morris",
+     "x": 520,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "agacharse"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cuchara",
+     "x": 330,
+     "y": 1150,
+     "s": 0.5,
+     "rasca": true,
+     "delante": true
+    }
+   ],
+   "efectos": [
+    "noche"
+   ],
+   "camara": [
+    [
+     0,
+     300,
+     1140,
+     2.4
+    ],
+    [
+     1,
+     300,
+     1150,
+     2.7
+    ]
+   ],
+   "opc": {
+    "rejas": false
+   }
+  },
+  {
+   "tira": "A ESCONDIDAS",
+   "escenario": "celda",
+   "entrada": "barrido",
+   "actores": [
+    {
+     "quien": "morris",
+     "x": 520,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "agacharse"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "miedo"
+      ]
+     ],
+     "mira": -1
+    },
+    {
+     "quien": "guardia",
+     "x": -200,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "andar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "neutral"
+      ]
+     ],
+     "ruta": [
+      [
+       0,
+       -300
+      ],
+      [
+       1,
+       60
+      ]
+     ],
+     "capa": 1.6
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "linterna",
+     "x": 40,
+     "y": 1000,
+     "a": 10,
+     "hud": false
+    }
+   ],
+   "efectos": [
+    "noche"
+   ],
+   "camara": [
+    [
+     0,
+     400,
+     1100,
+     1.6
+    ],
+    [
+     1,
+     380,
+     1100,
+     1.75
+    ]
+   ],
+   "opc": {
+    "rejillaAbierta": true
+   }
+  },
+  {
+   "tira": "SIEMPRE EN LA CAMA",
+   "escenario": "celda",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "guardia",
+     "x": 160,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "asentir"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "neutral"
+      ]
+     ],
+     "capa": 1.6
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cabeza_falsa",
+     "x": 590,
+     "y": 1066
+    }
+   ],
+   "efectos": [
+    "noche",
+    "reflector"
+   ],
+   "camara": [
+    [
+     0,
+     640,
+     1060,
+     1.5
+    ],
+    [
+     1,
+     640,
+     1060,
+     1.65
+    ]
+   ]
+  },
+  {
+   "tira": "¿QUIÉN DORMÍA?",
+   "escenario": "celda",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cabeza_falsa",
+     "x": 590,
+     "y": 1066
+    },
+    {
+     "tipo": "circulo",
+     "x": 600,
+     "y": 1050,
+     "r": 150,
+     "en": 0.25
+    }
+   ],
+   "efectos": [
+    "noche",
+    "vineta"
+   ],
+   "camara": [
+    [
+     0,
+     600,
+     1060,
+     2.2
+    ],
+    [
+     1,
+     600,
+     1060,
+     2.5
+    ]
+   ]
+  },
+  {
+   "tira": "NADIE",
+   "escenario": "celda",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cabeza_falsa",
+     "x": 590,
+     "y": 1066,
+     "revela": 0.05
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     600,
+     1040,
+     2.4
+    ],
+    [
+     1,
+     600,
+     1000,
+     1.9
+    ]
+   ],
+   "sacudida": [
+    0.08
+   ]
+  },
+  {
+   "tira": "CABEZAS FALSAS",
+   "escenario": "negro",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cabeza_falsa",
+     "x": 380,
+     "y": 900,
+     "s": 1.1,
+     "revela": 0
+    },
+    {
+     "tipo": "texto",
+     "texto": "PAPEL MACHÉ",
+     "x": 540,
+     "y": 1180,
+     "en": 0.3,
+     "tam": 64,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "JABÓN Y PAPEL",
+   "escenario": "negro",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "JABÓN",
+     "x": 340,
+     "y": 640,
+     "en": 0.05,
+     "tam": 64,
+     "r": -6
+    },
+    {
+     "tipo": "texto",
+     "texto": "PAPEL HIGIÉNICO",
+     "x": 620,
+     "y": 860,
+     "en": 0.3,
+     "tam": 60,
+     "r": 4
+    },
+    {
+     "tipo": "texto",
+     "texto": "PELO DE VERDAD",
+     "x": 520,
+     "y": 1080,
+     "en": 0.6,
+     "tam": 64,
+     "r": -3,
+     "color": "#9B2F27"
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "UNA BALSA",
+   "escenario": "isla_carcel",
+   "entrada": "fundido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "+50 IMPERMEABLES",
+     "x": 540,
+     "y": 520,
+     "en": 0.35,
+     "tam": 56,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "noche",
+    "agua"
+   ],
+   "camara": [
+    [
+     0,
+     700,
+     1250,
+     1.8
+    ],
+    [
+     1,
+     600,
+     1200,
+     1.3
+    ]
+   ],
+   "opc": {
+    "balsa": [
+     760,
+     1290,
+     -40
+    ]
+   }
+  },
+  {
+   "tira": "LO QUE HOY SABEMOS",
+   "escenario": "isla_carcel",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "NUNCA APARECIERON",
+     "x": 540,
+     "y": 520,
+     "en": 0.3,
+     "tam": 56,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "noche",
+    "reflector"
+   ],
+   "camara": [
+    [
+     0,
+     900,
+     1200,
+     1.1
+    ],
+    [
+     1,
+     900,
+     1150,
+     1.2
+    ]
+   ]
+  },
+  {
+   "tira": "CERRÓ EN 1963",
+   "escenario": "isla_carcel",
+   "entrada": "fundido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "sello",
+     "texto": "CERRADA · 1963",
+     "x": 540,
+     "y": 860,
+     "en": 0.2,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "sepia"
+   ],
+   "camara": [
+    [
+     0,
+     440,
+     900,
+     1.3
+    ],
+    [
+     1,
+     440,
+     900,
+     1.2
+    ]
+   ]
+  },
+  {
+   "tira": "CASO CERRADO",
+   "escenario": "celda",
+   "entrada": "fundido",
+   "actores": [
+    {
+     "quien": "guardia",
+     "x": 160,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "manosCintura"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "enfado"
+      ]
+     ],
+     "capa": 1.6
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "cabeza_falsa",
+     "x": 590,
+     "y": 1066,
+     "revela": 0
+    },
+    {
+     "tipo": "sello",
+     "texto": "CASO CERRADO",
+     "x": 540,
+     "y": 520,
+     "en": 0.15,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "noche"
+   ],
+   "camara": [
+    [
+     0,
+     640,
+     1000,
+     1.2
+    ],
+    [
+     1,
+     640,
+     1000,
+     1.1
+    ]
+   ]
+  }
+ ],
+ "cuentaAtrasEscena": {
+  "tira": "",
+  "escenario": "celda",
+  "entrada": "fundido",
+  "actores": [],
+  "objetos": [
+   {
+    "tipo": "cabeza_falsa",
+    "x": 590,
+    "y": 1066
+   },
+   {
+    "tipo": "reloj",
+    "x": 300,
+    "y": 520,
+    "s": 0.8,
+    "hud": true
+   }
+  ],
+  "efectos": [
+   "noche",
+   "vineta"
+  ],
+  "camara": [
+   [
+    0,
+    640,
+    1040,
+    1.4
+   ],
+   [
+    1,
+    640,
+    1040,
+    1.55
+   ]
+  ]
+ }
+}

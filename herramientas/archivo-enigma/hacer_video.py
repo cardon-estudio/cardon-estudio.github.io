@@ -54,7 +54,11 @@ def hoja(page, tmp, T, ts=None):
     prev = os.path.join(tmp, "prueba"); os.makedirs(prev, exist_ok=True)
     sh(f"node '{AQUI}/motor/shot.js' '{page}' '{prev}' " + " ".join(map(str, ts)))
     ins = " ".join(f"-i '{prev}/t{x}.jpg'" for x in ts)
-    sh(f"ffmpeg -hide_banner -loglevel error -y {ins} -filter_complex \"hstack={len(ts)},scale={min(2600, 260*len(ts))}:-1\" '{tmp}/hoja.jpg'")
+    if len(ts) <= 8:
+        sh(f"ffmpeg -hide_banner -loglevel error -y {ins} -filter_complex \"hstack={len(ts)},scale={min(2600, 260*len(ts))}:-1\" '{tmp}/hoja.jpg'")
+    else:  # rejilla de 7 columnas para que cada fotograma se vea grande
+        lst = os.path.join(prev, "lista.txt"); open(lst, "w").write("".join(f"file 't{x}.jpg'\n" for x in ts))
+        sh(f"ffmpeg -hide_banner -loglevel error -y -f concat -safe 0 -i '{lst}' -vf \"scale=300:-1,tile=7x{-(-len(ts)//7)}\" -frames:v 1 '{tmp}/hoja.jpg'")
     print(f"Hoja de prueba: {tmp}/hoja.jpg")
 
 
@@ -147,7 +151,7 @@ def main():
         story = open(os.path.join(AQUI, cfg["guion"])).read()
         head = head.replace("</style>", "#cap span.k{color:#FFD23F}#cap span.on{color:#FFD23F;text-shadow:0 0 18px rgba(255,210,63,.45)}</style>", 1)
         html = head + open(os.path.join(AQUI, "motor/comun.js")).read() + f"\nconst CASE_LABEL={json.dumps(cfg.get('rotulo', ''), ensure_ascii=False)};\nwindow.STORY={story};\n" + \
-            "".join(lib(n) for n in ("personajes.js", "animales.js", "escenarios.js", "objetos.js", "director.js")) + lib("tail2.js")
+            "".join(lib(n) for n in ("personajes.js", "animales.js", "escenarios.js", "escenarios2.js", "objetos.js", "objetos2.js", "director.js")) + lib("tail2.js")
     else:
         html = head + open(os.path.join(AQUI, "motor/comun.js")).read() + \
             open(os.path.join(AQUI, cfg["escenas"])).read() + open(os.path.join(AQUI, "motor/tail.js")).read()

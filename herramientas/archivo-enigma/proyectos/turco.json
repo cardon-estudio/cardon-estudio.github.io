@@ -1,0 +1,98 @@
+{
+ "nombre": "turco",
+ "voz": "",
+ "velocidad": 1.15,
+ "pausa": 0.14,
+ "frases": [
+  "Una máquina gana al ajedrez a *Napoleón.",
+  "Y es el año *1809.",
+  "¿Cómo es *posible?",
+  "Un acertijo *real.",
+  "La llaman *El Turco.",
+  "La construyó Wolfgang von Kempelen para la emperatriz de *Austria, en 1770.",
+  "Antes de cada partida, abre sus puertas al público...",
+  "y dentro solo se ven *engranajes.",
+  "Recorre Europa y América durante más de *ochenta años...",
+  "y casi nadie le *gana.",
+  "Tienes diez *segundos.",
+  "¿Dónde está el *truco?",
+  "*Tiempo.",
+  "Dentro había un *hombre.",
+  "Un maestro de ajedrez, escondido en el mueble...",
+  "que se movía de un hueco a otro mientras enseñaban los *engranajes.",
+  "Unos *imanes bajo el tablero le decían qué pieza movía el rival...",
+  "y con una palanca movía el brazo del *Turco.",
+  "Esto es lo que hoy sabemos:",
+  "el Turco ardió en un *incendio en 1854...",
+  "y poco después se publicó su *secreto.",
+  "Caso *cerrado.",
+  "Síguenos para el próximo *expediente."
+ ],
+ "anclas": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  12,
+  14,
+  15,
+  16,
+  17,
+  18,
+  20,
+  21
+ ],
+ "cuenta_atras_tras": 11,
+ "quitar": [],
+ "golpes": [
+  1,
+  12,
+  13
+ ],
+ "guion": "guiones/turco.json",
+ "rotulo": "EL TURCO · VIENA, 1770",
+ "sonidos": [
+  [
+   0,
+   "murmullo",
+   0
+  ],
+  [
+   1,
+   "campana",
+   0.2
+  ],
+  [
+   4,
+   "aplauso",
+   0.3
+  ],
+  [
+   6,
+   "pasos",
+   0
+  ],
+  [
+   9,
+   "murmullo",
+   0.2
+  ],
+  [
+   13,
+   "papel",
+   0.2
+  ],
+  [
+   21,
+   "campana",
+   0
+  ]
+ ]
+}

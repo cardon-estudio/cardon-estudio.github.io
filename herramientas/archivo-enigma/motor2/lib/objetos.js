@@ -23,7 +23,7 @@ OBJ.reloj = (o, t, k) => `<g transform="${tr(o.x, o.y, o.s || 1)}"><circle r="11
 const PUB_ROPA = ['#3A3A44', '#5C4A3A', '#4E5B3E', '#6B2E2E', '#3E5A6E', '#7A5C3E', '#4A3B4F'];
 const PUB_PELO = ['#2E2218', '#5A3A22', '#8A8A8A', '#C9A66B', '#3B2418'];
 function publico(o, t, k) { let s = ''; const n = o.n || 7;
-  for (let i = 0; i < n; i++) { const mujer = rnd(i * 5 + (o.semilla || 1)) > .6; const d = { piel: ['#E8C29C', '#DDB08A', '#F0CDAA', '#C98F67'][i % 4], pelo: PUB_PELO[i % 5], peinado: mujer ? 'mono' : (rnd(i + 3) > .5 ? 'corto' : 'calvo'), barba: !mujer && rnd(i + 9) > .5 ? 'bigote' : null, sombrero: mujer ? null : (['bombin', 'chistera', 'canotier', 'gorra'][i % 4]), ropa: { tipo: mujer ? 'vestido' : 'chaqueta', color: PUB_ROPA[i % 7], pantalon: '#2E2B28', camisa: '#F2EEE6' }, altura: .92 + rnd(i + 2) * .14 };
+  for (let i = 0; i < n; i++) { const mujer = rnd(i * 5 + (o.semilla || 1)) > .6; const d = { piel: ['#E8C29C', '#DDB08A', '#F0CDAA', '#C98F67'][i % 4], pelo: PUB_PELO[i % 5], peinado: mujer ? 'mono' : (rnd(i + 3) > .5 ? 'corto' : 'calvo'), barba: !mujer && rnd(i + 9) > .5 ? 'bigote' : null, sombrero: mujer ? null : (o.sombreros ? o.sombreros[i % o.sombreros.length] : ['bombin', 'chistera', 'canotier', 'gorra'][i % 4]), ropa: { tipo: mujer ? 'vestido' : 'chaqueta', color: PUB_ROPA[i % 7], pantalon: '#2E2B28', camisa: '#F2EEE6' }, altura: .92 + rnd(i + 2) * .14 };
     const reac = o.reaccion ? (k >= (o.reaccion[0] || 0) ? o.reaccion[1] : 'mirar') : 'mirar'; const cara = reac === 'aplaudir' || reac === 'celebrar' ? 'feliz' : reac === 'sorprendido' ? 'sorpresa' : (o.cara || 'neutral');
     const x = lerp(o.x0, o.x1, n > 1 ? i / (n - 1) : .5) + (rnd(i + 11) - .5) * 40;
     s += humano(d, { x, y: o.y + (i % 2) * 24, s: (o.s || .55) * (1 + (i % 2) * .05), mira: o.mira || (x < 540 ? 1 : -1), t: t + i * .37, acts: [[0, reac]], cara: [[0, cara]] }); }
@@ -34,7 +34,7 @@ OBJ.publico = publico;
 const FX = {};
 FX.polvo = (t) => { let s = ''; for (let i = 0; i < 40; i++) { const x = (rnd(i) * 1080 + Math.sin(t * .3 + i) * 40), y = ((rnd(i + 5) * 1920 - t * (10 + rnd(i) * 18)) % 1920 + 1920) % 1920; s += `<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(1.5 + rnd(i + 3) * 3).toFixed(1)}" fill="#FFF3C4" opacity="${(.25 + .35 * Math.abs(Math.sin(t + i))).toFixed(2)}"/>`; } return s; };
 FX.rayos = (t) => `<g opacity="${(.22 + .05 * Math.sin(t * .8)).toFixed(2)}" style="mix-blend-mode:screen">${[0, 1, 2, 3].map(i => `<polygon points="${980 - i * 60},-100 ${1060 - i * 60},-100 ${520 - i * 230},1920 ${300 - i * 230},1920" fill="#FFF3C4"/>`).join('')}</g>`;
-FX.niebla = (t) => [0, 1, 2].map(i => `<ellipse cx="${((t * 30 * (i + 1) + i * 400) % 1800 - 300).toFixed(0)}" cy="${1250 + i * 60}" rx="600" ry="90" fill="#F2EEE6" opacity=".18" filter="url(#blur)"/>`).join('');
+FX.niebla = (t) => [0, 1, 2].map(i => `<ellipse cx="${((t * 30 * (i + 1) + i * 400) % 1800 - 300).toFixed(0)}" cy="${1250 + i * 60}" rx="600" ry="90" fill="#F2EEE6" opacity=".18" filter="url(#bl)"/>`).join('');
 FX.vineta = () => `<rect width="1080" height="1920" fill="url(#vig)"/>`;
 FX.calida = () => `<rect width="1080" height="1920" fill="#FFB866" opacity=".08" style="mix-blend-mode:multiply"/>`;
 FX.fria = () => `<rect width="1080" height="1920" fill="#5C7A9A" opacity=".12" style="mix-blend-mode:multiply"/>`;

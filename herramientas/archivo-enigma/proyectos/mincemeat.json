@@ -1,0 +1,92 @@
+{
+ "nombre": "mincemeat",
+ "voz": "",
+ "velocidad": 1.15,
+ "pausa": 0.14,
+ "frases": [
+  "Un *muerto engaña a Hitler...",
+  "y cambia la *guerra.",
+  "¿Cómo lo *consigue?",
+  "Un acertijo *real.",
+  "Huelva, *1943.",
+  "Un pescador encuentra en el mar el cuerpo de un oficial *británico.",
+  "Lleva un maletín *encadenado.",
+  "Dentro hay cartas *secretas:",
+  "los aliados van a atacar *Grecia.",
+  "Los alemanes consiguen *copiarlas...",
+  "y envían tropas a *Grecia.",
+  "Pero los aliados desembarcan en *Sicilia.",
+  "Tienes diez *segundos.",
+  "¿Quién era el *muerto?",
+  "*Tiempo.",
+  "No era ningún *oficial.",
+  "Era un hombre sin hogar que había muerto en *Londres.",
+  "Los espías británicos le inventaron una vida: el mayor William *Martin.",
+  "Le pusieron cartas de amor, entradas de teatro...",
+  "y lo soltaron cerca de la costa desde un *submarino.",
+  "Esto es lo que hoy sabemos:",
+  "se llamaba Glyndwr *Michael...",
+  "y está enterrado en *Huelva.",
+  "Caso *cerrado.",
+  "Síguenos para el próximo *expediente."
+ ],
+ "anclas": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  14,
+  16,
+  17,
+  18,
+  19,
+  20,
+  22,
+  23
+ ],
+ "cuenta_atras_tras": 13,
+ "quitar": [],
+ "golpes": [
+  11,
+  14,
+  15
+ ],
+ "guion": "guiones/mincemeat.json",
+ "rotulo": "OPERACIÓN MINCEMEAT · 1943",
+ "sonidos": [
+  [
+   4,
+   "pasos",
+   0
+  ],
+  [
+   7,
+   "papel",
+   0
+  ],
+  [
+   9,
+   "papel",
+   0.2
+  ],
+  [
+   18,
+   "papel",
+   0
+  ],
+  [
+   24,
+   "campana",
+   0
+  ]
+ ]
+}

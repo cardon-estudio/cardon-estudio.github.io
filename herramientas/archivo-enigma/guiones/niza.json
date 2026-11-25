@@ -1,0 +1,1131 @@
+{
+ "personajes": {
+  "empleado": {
+   "piel": "#E8C29C",
+   "pelo": "#3B2418",
+   "peinado": "corto",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#3E4A5C",
+    "pantalon": "#2E3236",
+    "camisa": "#F2EEE6",
+    "corbata": "#9B2F27"
+   }
+  },
+  "empleada": {
+   "piel": "#F0CDAA",
+   "pelo": "#8A5A3A",
+   "peinado": "largo",
+   "ropa": {
+    "tipo": "vestido",
+    "color": "#C46A4A",
+    "camisa": "#F2EEE6"
+   }
+  },
+  "policia": {
+   "piel": "#DDB08A",
+   "pelo": "#2E2218",
+   "peinado": "corto",
+   "barba": "bigote",
+   "sombrero": "quepis",
+   "colorSombrero": "#1E2A4A",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#1E2A4A",
+    "pantalon": "#1E2A4A",
+    "camisa": "#9CB4C8",
+    "corbata": "#111"
+   }
+  },
+  "spaggiari": {
+   "piel": "#DDB08A",
+   "pelo": "#2E2218",
+   "peinado": "corto",
+   "barba": "bigote",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#C9B49A",
+    "pantalon": "#5A4A3A",
+    "camisa": "#F2EEE6"
+   }
+  },
+  "juez": {
+   "piel": "#EBC6A2",
+   "pelo": "#8A8A8A",
+   "peinado": "calvo",
+   "gafas": "redondas",
+   "edad": "mayor",
+   "ropa": {
+    "tipo": "levita",
+    "color": "#1E1E24",
+    "pantalon": "#1E1E24",
+    "camisa": "#F2EEE6"
+   }
+  },
+  "ladron1": {
+   "piel": "#E8C29C",
+   "pelo": "#2E2218",
+   "peinado": "corto",
+   "sombrero": "gorra",
+   "colorSombrero": "#3A3F44",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#3A3F44",
+    "pantalon": "#2E3236",
+    "camisa": "#5A5E62"
+   }
+  },
+  "ladron2": {
+   "piel": "#C98F67",
+   "pelo": "#3B2418",
+   "peinado": "corto",
+   "sombrero": "gorra",
+   "colorSombrero": "#4A3B2E",
+   "ropa": {
+    "tipo": "chaqueta",
+    "color": "#4A3B2E",
+    "pantalon": "#2E3236",
+    "camisa": "#5A5E62"
+   }
+  }
+ },
+ "escenas": [
+  {
+   "tira": "NIZA, 1976",
+   "escenario": "camara_acorazada",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "linterna",
+     "x": 200,
+     "y": 1150,
+     "a": 15
+    }
+   ],
+   "efectos": [
+    "foco",
+    "polvo"
+   ],
+   "camara": [
+    [
+     0,
+     500,
+     1300,
+     2.2
+    ],
+    [
+     1,
+     560,
+     1000,
+     1.2
+    ]
+   ],
+   "opc": {
+    "saqueada": true,
+    "botin": 560,
+    "ruedaGira": false
+   }
+  },
+  {
+   "tira": "SIN TOCAR LA PUERTA",
+   "escenario": "camara_acorazada",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "circulo",
+     "x": 1300,
+     "y": 860,
+     "r": 460,
+     "en": 0.15
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ],
+   "camara": [
+    [
+     0,
+     1150,
+     860,
+     1.6
+    ],
+    [
+     1,
+     1200,
+     860,
+     1.75
+    ]
+   ]
+  },
+  {
+   "tira": "¿POR DÓNDE?",
+   "escenario": "camara_acorazada",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "¿POR DÓNDE?",
+     "x": 540,
+     "y": 480,
+     "en": 0.2,
+     "tam": 84,
+     "color": "#9B2F27",
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     900,
+     1.3
+    ],
+    [
+     1,
+     540,
+     900,
+     1.45
+    ]
+   ],
+   "opc": {
+    "saqueada": true
+   }
+  },
+  {
+   "tira": "UN ACERTIJO REAL",
+   "escenario": "cartel",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "cartel",
+     "x": 540,
+     "y": 860,
+     "s": 1.25,
+     "texto": "¡EL GOLPE!",
+     "sub": "UN ACERTIJO REAL"
+    },
+    {
+     "tipo": "maletin",
+     "x": 540,
+     "y": 1020,
+     "s": 0.5
+    }
+   ],
+   "efectos": [],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     0.95
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "NIZA, 1976",
+   "escenario": "camara_acorazada",
+   "entrada": "barrido",
+   "actores": [],
+   "objetos": [],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     200,
+     860,
+     1.05
+    ],
+    [
+     1,
+     760,
+     900,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "NO SE ABRE",
+   "escenario": "camara_acorazada",
+   "entrada": "fundido",
+   "actores": [
+    {
+     "quien": "empleado",
+     "x": 760,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "duda"
+      ]
+     ]
+    },
+    {
+     "quien": "empleada",
+     "x": 480,
+     "escala": 0.76,
+     "acts": [
+      [
+       0,
+       "mirar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "miedo"
+      ]
+     ]
+    }
+   ],
+   "objetos": [],
+   "efectos": [],
+   "camara": [
+    [
+     0,
+     900,
+     1000,
+     1.3
+    ],
+    [
+     1,
+     960,
+     1000,
+     1.4
+    ]
+   ],
+   "opc": {
+    "ruedaGira": true,
+    "puertaX": 1350
+   }
+  },
+  {
+   "tira": "BLOQUEADA DESDE DENTRO",
+   "escenario": "camara_acorazada",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "DESDE DENTRO",
+     "x": 540,
+     "y": 520,
+     "en": 0.3,
+     "tam": 64,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ],
+   "camara": [
+    [
+     0,
+     1300,
+     860,
+     2.2
+    ],
+    [
+     1,
+     1300,
+     860,
+     2.5
+    ]
+   ],
+   "sacudida": [
+    0.3
+   ]
+  },
+  {
+   "tira": "LA ABREN A LA FUERZA",
+   "escenario": "camara_acorazada",
+   "entrada": "barrido",
+   "actores": [
+    {
+     "quien": "policia",
+     "x": 700,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "enfado"
+      ]
+     ]
+    },
+    {
+     "quien": "empleado",
+     "x": 420,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "sorprendido"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "miedo"
+      ]
+     ]
+    }
+   ],
+   "objetos": [],
+   "efectos": [
+    "polvo"
+   ],
+   "camara": [
+    [
+     0,
+     900,
+     1000,
+     1.25
+    ],
+    [
+     1,
+     860,
+     1000,
+     1.35
+    ]
+   ],
+   "opc": {
+    "puertaX": 1350
+   },
+   "sacudida": [
+    0.2,
+    0.5
+   ]
+  },
+  {
+   "tira": "CAJAS VACÍAS",
+   "escenario": "camara_acorazada",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "empleada",
+     "x": 400,
+     "escala": 0.76,
+     "acts": [
+      [
+       0,
+       "sorprendido"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "miedo"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     700,
+     1.4
+    ],
+    [
+     1,
+     540,
+     700,
+     1.6
+    ]
+   ],
+   "opc": {
+    "saqueada": true,
+    "puerta": false
+   }
+  },
+  {
+   "tira": "UNA NOTA",
+   "escenario": "camara_acorazada",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "nota_pared",
+     "x": 430,
+     "y": 420,
+     "s": 0.62,
+     "texto": "Sin armas,|sin odio|y sin violencia",
+     "en": 0.1
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     400,
+     500,
+     1.8
+    ],
+    [
+     1,
+     420,
+     520,
+     1.9
+    ]
+   ],
+   "opc": {
+    "saqueada": true,
+    "puerta": false
+   }
+  },
+  {
+   "tira": "«SIN ARMAS, SIN ODIO»",
+   "escenario": "camara_acorazada",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "nota_pared",
+     "x": 430,
+     "y": 420,
+     "s": 0.62,
+     "texto": "Sin armas,|sin odio|y sin violencia",
+     "en": 0
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ],
+   "camara": [
+    [
+     0,
+     420,
+     520,
+     1.5
+    ],
+    [
+     1,
+     420,
+     520,
+     1.6
+    ]
+   ],
+   "opc": {
+    "saqueada": true,
+    "puerta": false
+   }
+  },
+  {
+   "tira": "¿CÓMO LLEGARON DENTRO?",
+   "escenario": "camara_acorazada",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "circulo",
+     "x": 540,
+     "y": 1100,
+     "r": 360,
+     "en": 0.25
+    }
+   ],
+   "efectos": [
+    "vineta"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1000,
+     1.1
+    ],
+    [
+     1,
+     540,
+     1000,
+     1.2
+    ]
+   ],
+   "opc": {
+    "saqueada": true
+   }
+  },
+  {
+   "tira": "POR DEBAJO",
+   "escenario": "camara_acorazada",
+   "entrada": "corte",
+   "actores": [],
+   "objetos": [],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     500,
+     1300,
+     2.6
+    ],
+    [
+     1,
+     500,
+     1340,
+     2.2
+    ]
+   ],
+   "opc": {
+    "saqueada": true,
+    "agujero": 500,
+    "botin": 840
+   },
+   "sacudida": [
+    0.05
+   ]
+  },
+  {
+   "tira": "LAS ALCANTARILLAS",
+   "escenario": "alcantarilla",
+   "entrada": "barrido",
+   "actores": [
+    {
+     "quien": "ladron1",
+     "x": 380,
+     "escala": 0.7,
+     "acts": [
+      [
+       0,
+       "andar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ],
+     "ruta": [
+      [
+       0,
+       200
+      ],
+      [
+       1,
+       460
+      ]
+     ]
+    },
+    {
+     "quien": "ladron2",
+     "x": 640,
+     "escala": 0.66,
+     "acts": [
+      [
+       0,
+       "andar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "miedo"
+      ]
+     ],
+     "ruta": [
+      [
+       0,
+       460
+      ],
+      [
+       1,
+       700
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "linterna",
+     "x": 470,
+     "y": 1000,
+     "a": -10
+    }
+   ],
+   "efectos": [
+    "agua"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     980,
+     1.2
+    ],
+    [
+     1,
+     540,
+     1000,
+     1.35
+    ]
+   ]
+  },
+  {
+   "tira": "UN TÚNEL",
+   "escenario": "negro",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "corte_tunel",
+     "x": 540,
+     "y": 900,
+     "s": 1.0,
+     "en": 0.1,
+     "fin": 0.85
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     860,
+     1
+    ],
+    [
+     1,
+     540,
+     860,
+     1.05
+    ]
+   ]
+  },
+  {
+   "tira": "CON EL BANCO CERRADO",
+   "escenario": "alcantarilla",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "ladron1",
+     "x": 440,
+     "escala": 0.7,
+     "acts": [
+      [
+       0,
+       "agacharse"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "concentrado"
+      ]
+     ]
+    },
+    {
+     "quien": "ladron2",
+     "x": 700,
+     "escala": 0.66,
+     "acts": [
+      [
+       0,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "feliz"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "linterna",
+     "x": 560,
+     "y": 920,
+     "a": -40
+    }
+   ],
+   "efectos": [],
+   "camara": [
+    [
+     0,
+     540,
+     1050,
+     1.6
+    ],
+    [
+     1,
+     520,
+     1050,
+     1.75
+    ]
+   ]
+  },
+  {
+   "tira": "TODO EL FIN DE SEMANA",
+   "escenario": "camara_acorazada",
+   "entrada": "fundido",
+   "actores": [
+    {
+     "quien": "ladron1",
+     "x": 300,
+     "escala": 0.7,
+     "acts": [
+      [
+       0,
+       "celebrar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "feliz"
+      ]
+     ]
+    },
+    {
+     "quien": "ladron2",
+     "x": 760,
+     "escala": 0.66,
+     "acts": [
+      [
+       0,
+       "aplaudir"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "feliz"
+      ]
+     ],
+     "mira": -1
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "SÁBADO · DOMINGO",
+     "x": 540,
+     "y": 520,
+     "en": 0.2,
+     "tam": 56,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1000,
+     1.2
+    ],
+    [
+     1,
+     540,
+     1000,
+     1.3
+    ]
+   ],
+   "opc": {
+    "saqueada": true,
+    "agujero": 540,
+    "botin": 540,
+    "puerta": false
+   }
+  },
+  {
+   "tira": "LO QUE HOY SABEMOS",
+   "escenario": "ventana_juez",
+   "entrada": "barrido",
+   "actores": [
+    {
+     "quien": "spaggiari",
+     "x": 760,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "manosCintura"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "orgulloso"
+      ]
+     ],
+     "mira": -1
+    },
+    {
+     "quien": "policia",
+     "x": 300,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "senalar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "enfado"
+      ]
+     ]
+    }
+   ],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "ALBERT SPAGGIARI",
+     "x": 540,
+     "y": 480,
+     "en": 0.3,
+     "tam": 56,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "calida"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     980,
+     1.2
+    ],
+    [
+     1,
+     560,
+     980,
+     1.3
+    ]
+   ]
+  },
+  {
+   "tira": "¡POR LA VENTANA!",
+   "escenario": "ventana_juez",
+   "entrada": "corte",
+   "actores": [
+    {
+     "quien": "juez",
+     "x": 200,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "sorprendido"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "sorpresa"
+      ]
+     ]
+    },
+    {
+     "quien": "spaggiari",
+     "x": 600,
+     "escala": 0.8,
+     "acts": [
+      [
+       0,
+       "andar"
+      ]
+     ],
+     "cara": [
+      [
+       0,
+       "feliz"
+      ]
+     ],
+     "ruta": [
+      [
+       0,
+       520
+      ],
+      [
+       0.6,
+       900
+      ],
+      [
+       1,
+       1300
+      ]
+     ]
+    }
+   ],
+   "objetos": [],
+   "efectos": [],
+   "camara": [
+    [
+     0,
+     600,
+     900,
+     1.3
+    ],
+    [
+     1,
+     680,
+     880,
+     1.45
+    ]
+   ],
+   "sacudida": [
+    0.6
+   ]
+  },
+  {
+   "tira": "EL BOTÍN NO APARECIÓ",
+   "escenario": "camara_acorazada",
+   "entrada": "zoom",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "texto",
+     "texto": "¿DÓNDE ESTÁ?",
+     "x": 540,
+     "y": 520,
+     "en": 0.3,
+     "tam": 64,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "foco"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1300,
+     1.8
+    ],
+    [
+     1,
+     540,
+     1300,
+     1.9
+    ]
+   ],
+   "opc": {
+    "saqueada": true,
+    "agujero": 540,
+    "puerta": false
+   }
+  },
+  {
+   "tira": "CASO CERRADO",
+   "escenario": "alcantarilla",
+   "entrada": "fundido",
+   "actores": [],
+   "objetos": [
+    {
+     "tipo": "linterna",
+     "x": 300,
+     "y": 1050,
+     "a": -5
+    },
+    {
+     "tipo": "sello",
+     "texto": "CASO CERRADO",
+     "x": 540,
+     "y": 520,
+     "en": 0.15,
+     "hud": true
+    }
+   ],
+   "efectos": [
+    "agua"
+   ],
+   "camara": [
+    [
+     0,
+     540,
+     1000,
+     1.05
+    ],
+    [
+     1,
+     540,
+     1000,
+     0.98
+    ]
+   ]
+  }
+ ],
+ "cuentaAtrasEscena": {
+  "tira": "",
+  "escenario": "camara_acorazada",
+  "entrada": "fundido",
+  "actores": [],
+  "objetos": [
+   {
+    "tipo": "reloj",
+    "x": 300,
+    "y": 520,
+    "s": 0.8,
+    "hud": true
+   }
+  ],
+  "efectos": [
+   "vineta"
+  ],
+  "camara": [
+   [
+    0,
+    540,
+    1000,
+    1.15
+   ],
+   [
+    1,
+    540,
+    1000,
+    1.25
+   ]
+  ],
+  "opc": {
+   "saqueada": true
+  }
+ }
+}
