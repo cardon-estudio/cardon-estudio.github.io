@@ -1,0 +1,61 @@
+{
+ "nombre": "hans",
+ "voz": "https://elevenlabsusercontent.com/database/workspace/1b047664c9914e53a493aab8c5a8c5e5/content_generation/HZJVnkcpbZ8w6KYg0HfM/wfhp4ykTF8BiKFhpzhtj/content.mp3?Expires=1795626000&KeyName=assets-cdn-key-1&Signature=xBN7BuDneZwWJceIBO_zRtFFyiw=",
+ "velocidad": 1.15,
+ "pausa": 0.14,
+ "escenas": "escenas/hans.js",
+ "frases": [
+  "Un caballo resuelve sumas delante de *científicos...",
+  "y no hay ningún *truco.",
+  "¿Cómo lo *hacía?",
+  "Un acertijo *real.",
+  "Se llama Hans el *Listo.",
+  "Su dueño, Wilhelm von Osten, un profesor de *matemáticas, le pregunta:",
+  "«Tres más *dos.»",
+  "Hans golpea el suelo con la pata...",
+  "*cinco veces.",
+  "Una comisión de expertos lo estudia...",
+  "y no encuentra *trampa.",
+  "Pero un joven psicólogo, Oskar Pfungst, prueba algo *distinto.",
+  "Tienes diez *segundos.",
+  "¿Qué *descubrió?",
+  "*Tiempo.",
+  "Pfungst le puso *anteojeras para que no viera a quien preguntaba...",
+  "y Hans *falló.",
+  "Y aquí viene la clave:",
+  "Hans no sabía *sumar.",
+  "Leía la *cara de quien preguntaba.",
+  "Al llegar al número correcto, la persona se *relajaba sin darse cuenta...",
+  "y él *paraba.",
+  "Esto es lo que hoy sabemos:",
+  "se llama «efecto Hans el *Listo»...",
+  "y los científicos lo tienen en cuenta *todavía hoy.",
+  "Caso *cerrado.",
+  "Cuéntamelo en *comentarios.",
+  "Síguenos para el próximo *expediente."
+ ],
+ "anclas": [
+  0,
+  3,
+  4,
+  7,
+  9,
+  11,
+  12,
+  14,
+  17,
+  20,
+  22,
+  25
+ ],
+ "cuenta_atras_tras": 13,
+ "quitar": [
+  26
+ ],
+ "golpes": [
+  8,
+  16,
+  18,
+  21
+ ]
+}
